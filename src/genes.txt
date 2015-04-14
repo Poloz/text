@@ -1,0 +1,132 @@
+﻿Scanner,Coral fish,Swimming,Colorful,Small
+Scanner,Antelope,Horny,Big,Fast
+Scanner,Hippo,Big,Swimming
+Scanner,Squirrel,Rodent,Hardworking,Long tail,Furry,Jumping
+Scanner,Bloch,Fast,Insect,Jumping,Small,Bloodsucker
+Scanner,Beaver,Hardworking,Rodent,Swimming,Hardworking,Swimming,Swimming
+Scanner,Wolf,Predator,Social
+Scanner,Sparrow,Jumping,Small,Flying,Fast
+Scanner,Cheetah,Fast,Predator
+Scanner,Dove,Flying
+Scanner,Beetle,Insect,Flying
+Scanner,Zebra,Fast,Colorful
+Scanner,Snake,Poisonous,Long tail,Long neck
+Scanner,Kangaroo,Big,Jumping,Marsupial
+Scanner,Kiwi,Furry
+Scanner,Koala,Big,Predator,Furry
+Scanner,Hummingbird,Small,Flying,Colorful,Hardworking
+Scanner,Mosquito,Bloodsucker,Flying,Insect
+Scanner,Cow,Domestic,Big,Horny
+Scanner,Cat,Domestic,Furry
+Scanner,Crocodile,Big,Predator,Swimming
+Scanner,Rat,Long tail,Rodent
+Scanner,Grasshopper,Insect,Fast,Jumping
+Scanner,Chicken,Domestic
+Scanner,Swan,Flying,Swimming,Long neck
+Scanner,Leo,Big,Predator
+Scanner,Bat,Rodent,Flying,Small
+Scanner,Flying fish,Flying,Swimming
+Scanner,Horse,Fast,Domestic
+Scanner,Frog,Jumping,Swimming
+Scanner,Manul,Furry
+Scanner,Bear,Big,Predator
+Scanner,Ant,Small,Hardworking,Insect,Social,Fast
+Scanner,Rhino,Horny,Big
+Scanner,Sheep,Domestic,Furry
+Scanner,Wasp,Insect,Flying,Poisonous
+Scanner,Peacock,Colorful,Flying,Long neck
+Scanner,Panda,Colorful,Big,Predator
+Scanner,Penguin,Swimming
+Scanner,Piranha,Swimming,Predator
+Scanner,Parrot,Flying,Colorful
+Scanner,Bee,Flying,Furry,Hardworking,Insect,Social
+Scanner,Fish,Swimming
+Scanner,Locust,Jumping,Flying,Insect,Big
+Scanner,Pig,Domestic
+Scanner,Scorpio,Insect,Long tail,Poisonous
+Scanner,Dog,Domestic,Social
+Scanner,Falcon,Flying,Predator
+Scanner,Ostrich,Fast,Long neck,Big
+Scanner,Tarantula,Furry,Poisonous,Insect
+Scanner,Tiger,Big,Predator,Colorful
+Scanner,Seal,Swimming,Big
+Scanner,Duck,Domestic,Swimming,Flying
+Scanner,Hamster,Rodent,Small,Domestic
+Scanner,Worm,Insect
+Scanner,Lizard,Fast,Long tail
+Scanner,Cassowary,Big,Furry
+Scanner,Seagull,Flying,Swimming
+Scanner,Rabbit,Furry,Jumping,Rodent
+Scanner,Woodpecker,Hardworking,Flying,Colorful
+Scanner,Jerboa,Small,Jumping,Fast
+Scanner,Goose,Big,Flying,Long neck
+Scanner,Chinchilla,Furry,Rodent
+Scanner,Aphid,Small,Insect
+Scanner,Anaconda,Big,Long neck,Long tail
+Scanner,Albatross,Flying,Big,Swimming
+Scanner,Black widow,Poisonous,Colorful
+Scanner,Boar,Fast,Furry
+Scanner,Butterfly,Colorful,Insect
+Scanner,Camel,Domestic,Long neck,Big
+Scanner,Cancer,Swimming,Long tail
+Scanner,Centipede,Fast,Insect
+Scanner,Chameleon,Long tail,Colorful
+Scanner,Chupacabra,Predator,Bloodsucker
+Scanner,Cockroach,Fast,Insect,Domestic
+Scanner,Crab,Swimming
+Scanner,Deer,Horny,Fast
+Scanner,Dolphin,Social,Swimming,Jumping
+Scanner,Donkey,Domestic
+Scanner,Dragon,Big,Long tail,Long neck,Flying,Predator
+Scanner,Dragonfly,Insect,Fast,Flying,Long tail
+Scanner,Eagle,Flying,Big,Predator
+Scanner,Eel,Swimming,Long tail
+Scanner,Elephant,Horny,Big,
+Scanner,Elk,Horny,Big
+Scanner,Fly,Insect,Flying,Fast
+Scanner,Flying squirrel,Flying,Rodent
+Scanner,Fox,Colorful,Predator
+Scanner,Fur seal,Furry,Swimming,Predator
+Scanner,Giraffe,Big,Long neck,Colorful
+Scanner,Goat,Horny,Domestic
+Scanner,Grampus,Big,Swimming,Predator,Colorful
+Scanner,Griffin,Flying,Predator,
+Scanner,Guinea pig,Furry,Swimming,Rodent
+Scanner,Horsefly,Big,Insect,Flying
+Scanner,Kashalot,Big,Predator,Swimming
+Scanner,Ladybird,Colorful,Insect
+Scanner,Leech,Bloodsucker,Swimming
+Scanner,Lobster,Big,Swimming
+Scanner,Mammoth,Big,Horny,Furry
+Scanner,Manatee,Swimming,Big
+Scanner,Manticore,Predator,Poisonous,Flying,Long tail
+Scanner,Mantis,Insect,Big
+Scanner,Mole,Rodent
+Scanner,Moloch,Horny,Long tail
+Scanner,Monkey,Long tail,Furry
+Scanner,Narwhal,Horny,Swimming
+Scanner,Newt,Long tail,Swimming,Fast
+Scanner,Pegasus,Flying,Fast
+Scanner,Pelican,Flying,Big,Swimming
+Scanner,Polar Bear,Big,Swimming,Predator,Furry
+Scanner,Raccoon,Fast,Colorful,Predator
+Scanner,Ram,Horny,Furry
+Scanner,Roc,Big,Flying,Predator
+Scanner,Sea dragon,Big,Swimming,Predator,Long neck,Long tail
+Scanner,Shrimp,Small,Swimming
+Scanner,Skunk,Poisonous
+Scanner,Spider,Predator
+Scanner,Stag beetle,Horny,Insect
+Scanner,Turkey,Big,Flying
+Scanner,Unicorn,Fast,Horny
+Scanner,Varan,Long tail,Big
+Scanner,Walrus,Big,Predator,Swimming
+Scanner,Whale,Big,Swimming
+Scanner,Wyvern,Big,Flying,Long neck,Poisonous,Predator
+Scanner,Hyena,Predator,Social
+Scanner,Shark,Big,Swimming,Predator
+Scanner,Whale shark,Big,Big,Swimming
+Scanner,Lionfish,Horny,Swimming,Colorful,Poisonous
+Scanner,Pelican eel,Swimming,Predator,Long tail
+Scanner,Seahorse,Swimming,Colorful,Long tail
+Scanner,Sloth,Big,Furry,Long neck

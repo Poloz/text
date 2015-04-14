@@ -1,0 +1,214 @@
+﻿Cat,Furry,Manul
+Fish,Rodent,Piranha
+Parrot,Domestic,Chicken
+Chicken,Colorful,Peacock
+Peacock,Small,Parrot
+Parrot,Big,Peacock
+Chicken,Furry,Kiwi
+Chicken,Swimming,Duck
+Duck,Predator,Falcon
+Dove,Predator,Falcon
+Fish,Colorful,Coral fish
+Leo,Colorful,Tiger
+Falcon,Big,Eagle
+Eagle,Small,Falcon
+Piranha,Big,Shark
+Shark,Small,Piranha
+Duck,Big,Swan
+Swan,Small,Duck
+Cat,Big,Leo
+Leo,Small,Cat
+Manul,Domestic,Cat
+Kiwi,Swimming,Penguin
+Fish,Flying,Flying fish
+Chicken,Long neck,Goose
+Duck,Marsupial,Pelican
+Swan,Marsupial,Pelican
+Goose,Marsupial,Pelican
+Duck,Long neck,Swan
+Hamster,Big,Rat
+Rat,Small,Hamster
+Fish,Predator,Piranha
+Hamster,Swimming,Beaver
+Hamster,Hardworking,Squirrel
+Squirrel,Flying,Flying squirrel
+Hamster,Flying,Bat
+Rat,Flying,Bat
+Mosquito,Colorful,Butterfly
+Fly,Big,Butterfly
+Butterfly,Small,Fly
+Fly,Colorful,Butterfly
+Butterfly,Hardworking,Bee
+Butterfly,Big,Hummingbird
+Wasp,Furry,Bee
+Mosquito,Hardworking,Ant
+Ant,Predator,Spider
+Ant,Flying,Wasp
+Mosquito,Big,Horsefly
+Horsefly,Small,Fly
+Butterfly,Social,Bee
+Wasp,Social,Bee
+Wasp,Domestic,Bee
+Parrot,Small,Hummingbird
+Hummingbird,Small,Butterfly
+Hummingbird,Big,Sparrow
+Sparrow,Small,Hummingbird
+Butterfly,Bloodsucker,Mosquito
+Ant,Bloodsucker,Mosquito
+Worm,Flying,Dragonfly
+Butterfly,Swimming,Dragonfly
+Spider,Long tail,Scorpio
+Fish,Insect,Worm
+Worm,Poisonous,Snake
+Worm,Big,Snake
+Snake,Small,Worm
+Worm,Fast,Centipede
+Snake,Fast,Lizard
+Snake,Big,Anaconda
+Anaconda,Small,Snake
+Lizard,Big,Varan
+Varan,Small,Lizard
+Lizard,Colorful,Chameleon
+Lizard,Swimming,Newt
+Lizard,Horny,Moloch
+Varan,Predator,Crocodile
+Tiger,Fast,Cheetah
+Leo,Fast,Cheetah
+Lizard,Jumping,Frog
+Swan,Fast,Ostrich
+Ostrich,Furry,Cassowary
+Ostrich,Colorful,Cassowary
+Snake,Insect,Worm
+Frog,Insect,Bloch
+Frog,Long tail,Lizard
+Hamster,Jumping,Jerboa
+Jerboa,Big,Kangaroo
+Kangaroo,Small,Jerboa
+Wolf,Domestic,Dog
+Cat,Social,Dog
+Bee,Poisonous,Wasp
+Bat,Insect,Butterfly
+Cheetah,Small,Cat
+Rat,Furry,Guinea pig
+Chinchilla,Swimming,Guinea pig
+Guinea pig,Big,Pig
+Pig,Small,Guinea pig
+Pig,Big,Hippo
+Hippo,Small,Pig
+Boar,Swimming,Walrus
+Elephant,Swimming,Walrus
+Walrus,Furry,Fur seal
+Seal,Furry,Fur seal
+Hippo,Domestic,Cow
+Cow,Long neck,Camel
+Cow,Fast,Antelope
+Antelope,Domestic,Horse
+Horse,Long neck,Giraffe
+Cow,Small,Goat
+Goat,Furry,Sheep
+Hippo,Horny,Rhino
+Wolf,Big,Bear
+Bear,Small,Wolf
+Wolf,Colorful,Fox
+Bear,Colorful,Panda
+Bear,Marsupial,Koala
+Panda,Marsupial,Koala
+Koala,Long tail,Monkey
+Aphid,Bloodsucker,Bloch
+Ant,Big,Beetle
+Ant,Big,Beetle
+Beetle,Colorful,Ladybird
+Beetle,Jumping,Grasshopper
+Beetle,Horny,Stag beetle
+Beetle,Small,Aphid
+Ant,Small,Aphid
+Aphid,Big,Ant
+Bee,Small,Ant
+Wasp,Small,Ant
+Aphid,Jumping,Bloch
+Grasshopper,Big,Locust
+Locust,Small,Grasshopper
+Chicken,Small,Dove
+Dove,Small,Sparrow
+Sparrow,Big,Dove
+Dove,Small,Sparrow
+Dove,Jumping,Sparrow
+Cow,Swimming,Manatee
+Manatee,Predator,Seal
+Rat,Swimming,Beaver
+Horse,Colorful,Zebra
+Spider,Poisonous,Black widow
+Spider,Furry,Tarantula
+Spider,Big,Tarantula
+Pig,Horny,Boar
+Bear,Big,Polar Bear
+Kiwi,Fast,Ostrich
+Hamster,Furry,Chinchilla
+Shark,Colorful,Grampus
+Grampus,Domestic,Dolphin
+Dolphin,Big,Whale
+Whale,Small,Dolphin
+Dolphin,Horny,Narwhal
+Whale,Horny,Narwhal
+Whale,Predator,Kashalot
+Beetle,Fast,Cockroach
+Beetle,Domestic,Cockroach
+Parrot,Hardworking,Woodpecker
+Sparrow,Hardworking,Woodpecker
+Sparrow,Small,Hummingbird
+Dove,Hardworking,Woodpecker
+Scorpio,Swimming,Cancer
+Horse,Small,Donkey
+Snake,Swimming,Eel
+Hippo,Big,Elephant
+Elephant,Furry,Mammoth
+Rat,Hardworking,Mole
+Grasshopper,Predator,Mantis
+Locust,Predator,Mantis
+Cancer,Big,Lobster
+Lobster,Small,Cancer
+Beetle,Swimming,Crab
+Crab,Small,Shrimp
+Crab,Long tail,Cancer
+Jerboa,Fast,Rabbit
+Worm,Bloodsucker,Leech
+Antelope,Horny,Deer
+Deer,Big,Elk
+Elk,Small,Deer
+Deer,Small,Goat
+Sheep,Horny,Ram
+Ram,Domestic,Sheep
+Dove,Swimming,Seagull
+Fox,Colorful,Raccoon
+Raccoon,Poisonous,Skunk
+Chicken,Big,Turkey
+Turkey,Small,Chicken
+Turkey,Swimming,Pelican
+Butterfly,Small,Fly
+Fly,Bloodsucker,Horsefly
+Seagull,Big,Albatross
+Albatross,Small,Seagull
+Cat,Predator,Hyena
+Hyena,Predator,Wolf
+Fish,Horny,Lionfish
+Coral fish,Horny,Lionfish
+Shark,Big,Whale shark
+Fish,Marsupial,Pelican eel
+Eel,Predator,Pelican eel
+Koala,Long neck,Sloth
+Bear,Long neck,Sloth
+Horse,Swimming,Seahorse
+
+Anaconda,Big,Sea dragon
+Leo,Flying,Griffin
+Leo,Poisonous,Manticore
+Dog,Bloodsucker,Chupacabra
+Crocodile,Big,Dragon
+Varan,Big,Dragon
+Moloch,Big,Dragon
+Dragon,Poisonous,Wyvern
+Lizard,Poisonous,Wyvern
+Eagle,Big,Roc
+Horse,Horny,Unicorn
+Rhino,Small,Unicorn
+Horse,Flying,Pegasus

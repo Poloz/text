@@ -1,4 +1,4 @@
 /lit/
-/dwg/*.bak
-/dwg/*.dwl
-/dwg/*.dwl2
+*.bak
+*.dwl
+*.dwl2

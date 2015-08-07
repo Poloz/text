@@ -1,0 +1,581 @@
+564D0D9E-1B86-1ED2-2F09-E72E143EFA5E
+
+DC: 307b32c3-a439-4ede-9544-1bad4c0d64af
+	07b08d42-ac37-403e-958f-74da906aca96
+DD: b7fca78a-a22c-44b9-bbc4-5449ce9a776a
+    384c475f-ff89-426a-a61c-7b99862e2489
+DK: 61266deb-7fca-4a22-b144-b13bca8a53f2
+
+It's a stub application never meant to be released in the store. It's purpose is to be processed through the sertification and to be downloaded as part of the part of the OS image for our oem partners.
+Stub app's functionality is to display only one page with "Get the latest version for Free" button and redirect user to the app's page in the store.
+
+Get the latest version for Free
+
+http://apps.microsoft.com/windows/ru-ru/app/doodle-tanks/8f28bb60-449a-46ac-a2e7-59823fe84025
+http://www.windowsphone.com/ru-ru/store/app/doodle-tanks/e29b18da-786e-46db-912a-23b5e61580cb
+
+FAILED
+    General metadata correctness test
+
+    Error Found: The general metadata correctness test detected the following errors:
+        The type Windows.Foundation.IStringable referenced by type LeadBoltLib.AdWrapper in file C:\Program Files\WindowsApps\JoyBitsLtd.DoodleKingdom_2.0.0.16_x86__2687mb06qk6xe\LeadBoltLib.winmd was not found. All types referenced in metadata files must be discoverable.
+        The type Windows.Foundation.IStringable referenced by type LeadBoltLib.AdTest in file C:\Program Files\WindowsApps\JoyBitsLtd.DoodleKingdom_2.0.0.16_x86__2687mb06qk6xe\LeadBoltLib.winmd was not found. All types referenced in metadata files must be discoverable.
+    Impact if not fixed: Windows store doesn't allow apps that don't pass Windows Runtime Metadata Validation.
+    How to fix: Please ensure that the compiler you are using to generate your Windows Runtime types is up to date with with the Windows Runtime specifications. 
+
+564D0D9E-1B86-1ED2-2F09-E72E143EFA5E
+
+1280/768 = 1,6666666667
+2048/1536 = 1,333333333
+2208/1242 = 1,77777777778
+1334/750 = 1,778666666666667
+1024/768 = 1,333333333333333
+960/640 = 1,5
+1366/768 = 1,778645833333333
+
+846/468 = 1,807692307692308
+558/756 = 0,7380952380952381
+414/468 = 0,8846153846153846
+414/180 = 2,3
+558/558 = 1
+
+358/173 = 2,069364161849711
+620/300 = 2,066666666666667
+1000/800 = 1,25
+
+800/480 = 1,666666666666667
+1024/600 = 1,706666666666667
+1280/720 = 1,777777777777778
+1280/800 = 1,6
+1920/1080 = 1,777777777777778
+1920/1200 = 1,6
+2560/1600 = 1,6
+
+1400/900 = 1,555555555555556
+2880/1800 = 1,6
+
+
+
+4/14/2015 2,248.85 GBP 
+3/13/2015 2,559.58 GBP 
+2/12/2015 3,519.82 GBP 
+1/14/2015 3,765.53 GBP 
+
+
+
+14.04.2015 Магазин Windows 8  £2,248.85 
+03.04.2015 Магазин Windows Phone  £1,451.05 
+Всего GBP £3,699.90 
+
+
+25.03.2015 Магазин Windows 8 £2,559.58 
+03.03.2015 Магазин Windows Phone  £1,603.38 
+Всего GBP £4,162.96 
+
+
+12.02.2015 Магазин Windows 8 £3,519.82 
+01.02.2015 Магазин Windows Phone £3,459.84 
+Всего GBP £6,979.66 
+
+
+14.01.2015 Магазин Windows 8 £3,765.53 
+01.01.2015 Магазин Windows Phone £7,310.18 
+Всего GBP £11,075.71 
+
+
+Диск с надписью "4".
+
+Диск с надписью "NTFS"
+
+Диск с надписью "ext"
+
+Такое дело, Ёлка. Знаю, это всё ты и твои проделки. Не отнекивайся даже. Рассказываю.
+
+Занесло меня по делам в центр города. Это такое специальное место, куда невозможно приехать днём на машине и оставить её в радиусе хотя бы часа ходьбы от точки назначения. Во всяком случае, у меня никогда не получалось. Я поэтому в центр на трамвае езжу. Или на метро, когда хорошее настроение. А от остановки - пешком, с полчасика. Каждый раз в таком походе жалею, что респиратор твой дома остался. В общем - благодать индустриальная, неприкрытая. Каждый раз что-то необычное случается. В этот раз вот что приключилось.
+Иду, значит, по центру города, весь окрылённый, в поисках богатства, счастья, вечной молодости и где бы перекусить. Переживаю за фолл, что мимо. И тут за очередным углом мне приветливо подмигивает, кто ты б думала? А vault-boy собственной персоной. Аккуратно и с любовью нарисованный на раскладушке милого кафе в переулке. И приветливо так сообщает надписью - "У нас, мол, лучшие фоллаут-бургеры в городе". Натурально оторопев, захожу в кафе. Полностью антуража там, конечно, не наблюдается, но элементы фоллаут-декора есть. И бутерброд, что характерно, неплохой. И чай, и плюшки-сладости приятные.
+А главное - там среди музыки попалась "I don’t want to set the world on fire". Хоть она и из третьего фолла, но тоже вдохновило.
+Сижу, тяну чай, слушаю музыку. И понимаю, что ну просто очень зря не еду.
+
+dgp_mana450: 1.49 -> 1.19
+dgp_mana30000: 38.59 -> 34.79
+dgp_mana3000: 7.69 -> 6.89
+dgp_mana10000: 18.49 -> 16.19
+dgp_mana1000: 3.09 -> 2.69
+dgp_mana_unlimited: 69.49 -> 61.79
+dgp_inappStarterKit: 1.49 -> 1.19
+
+А как же, фото будут, обязательно. Впечатлений - море. Главное - пацану очень понравилось. Есть большое желание повторить.
+Кратко:
+Поднимались на перевал, проходили по ущелью, топали по снежникам, ночевали в долине между горами. Полярный день сносил крышу напрочь. Был дождь, ветер, комары, мошки. Мы переходили вброд ледяные горные реки, нас заносило выше линии леса, где ничего не растёт. Кррасотища дикая.
+
+У тебя есть записи игры на этом иинструменте?
+
+ea54809c-5c9b-4ca3-89cb-3cbca8521758
+
+mana200: 1.19 -> 0.99
+mana450: 1.49 -> 1.19
+mana1000: 3.09 -> 2.69
+mana3000: 7.69 -> 6.89
+mana10000: 19.29 -> 16.99
+inapp_pentagram: 5.39 -> 4.59
+bonuspack: 1.49 -> 1.19
+hint3: 3.89 -> 3.49
+starterkit: 1.49 -> 1.19
+mana30000: 38.59 -> 34.79
+mana_unlimited: 77.29 -> 69.49
+
+
+In this update we've changed IAP prices and app descriptions only. App code wasn't changed.
+We've encountered some difficulties with the package versions. If versions 3.0.0.18 for ARM and x86 machines for Windows 8 could be transferred from our current store submission to this release, please, do that.
+Here's my (Anton's) dialog with support (Jonathan):
+
+Anton: We need to update in-app prices and descriptions without new app submission, but two next versions was already submitted. Two 3.0.0.19 packages, arm and x86, were uploaded, but we don't need them currently. App was not submitted. So we plan to revert the app state to .18 release, update IAP prices and descriptions and submit app with old packages.
+
+Jonathan: Understood. Please bear with me just a moment. I'm opening the Packages for Release 17 of Doodle Good: Planet HD
+
+Jonathan: This is only for the packages targeted at Windows 8, correct?
+
+Anton: Yes. Two of them.
+
+Jonathan: I assume, but wanting to confirm. Ok. I'll remove them for you now. Ok, those two packages have been removed the submission. Can you please double check and let me know?
+
+Anton: I've just uploaded our two old packages with 3.0.0.18 versions. Validation failed with "Validation error: Your arm package must have a version number greater than 3.0.0.18.". Could you delete entire Release 17 of Doodle God: Planet HD so we could re-create it and have our old 3.0.0.18 packages in-place?
+
+Jonathan: Oh. No I can't. That's not possible even for us. This did not used to happen in the rare instances when we would remove an app package. It looks like the best/quickest option is going to be for you to rebuild v3.0.0.18 and increment the minor version number. The other possibility is to simply leave off the x86 and ARM packages. That won't impact existing users, but the app would not be available for x86 and ARM users on Windows 8 until added again. Here is my suggestion: re-build and increment to 3.0.0.181
+
+Anton: Currently we cannot rebuild, this situation is out of our control due to Xbox Live integration in process. So IAP prices need to be changed, may be you could change them?
+
+Jonathan: I'm seeing now the problem with going to 181, also. I can contact some teams internally and see if there are other options not available to me.
+
+Anton: We really do not need to change builds, old .18 versions is ok. But in-app prices... Could IAP prices could be changed from your side, without new app submission?
+
+Jonathan: Not through me. I'm honestly not sure if that is possible, but I know for certain that my support line has no control over that.
+
+Anton: So our option is to leave x86 and arm users with windows 8 aside, submit new release with new IAP prices and wait for app approval?
+
+Jonathan: Without being able to rebuild, that's the only option right now. You're not updating so existing users will not miss out on that. Are you still seeing a steady increase of new users for Win8 on x86 and ARM
+
+Anton: No, we do not. So we'll submit new release without two packages. Could you please estimate approval time? 5 days or less? Or without new packages approval could be faster?
+
+Jonathan: I would estimate 5 days or less. Actually What all are you updating with this, anyway? I see the app icon/logo is different. If the app code has not changes, the certification should be really quick
+
+Anton: We are updating only IAP prices. App icon is from the builds with Xbox Live integration, it was uploaded with experimental purposes, not for actual use.
+
+Jonathan: Understood. Since you are also going through Xbox Live Integration, there may be other processes that I'm not familiar with. I'm going to contact some others internally for you and just explain everything you're running into right now. Currently, the only thing I can tell you is that you should be able to submit as is (without the Win8 x86 and ARM packages) and expect a quicker than 5 day certification timeframe.
+
+7 июля 2015, вторник.
+ok-1. Поправить инаппы в гугле.
+ok-2. Заполнить Solitaire Mystery: Stolen Power в вп8 сторе.
+ok-3. Разобраться с названием двойным в Мюнхе.
+4. Кабели Диме и Саше Анисимову.
+ok-5. Бекапы.
+6. Художественные картинки.
+7. Гит в свн для Дениса. 
+-8. Разобраться с Stolen Power full в вп8.
+9. Мобильник Антону.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+ok-11. Сварганить документ с описаловом для DGP для Евы.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+-14. Амазон - 8 игр завести.
+
+8 июля 2015, среда.
+4. Кабели Диме и Саше Анисимову.
+6. Художественные картинки.
+7. Гит в свн для Дениса. 
+ok-8. Разобраться с Stolen Power full в вп8.
+9. Мобильник Антону.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+ok-14. Амазон - 8 игр завести.
+15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+ok-17. Скрыть билды PRO версий из магазина, кроме Kingdom PRO
+ok-18. Ключи для танкистов.
+ok-19. Цену поменять.
+
+Hello.
+Our previous build was rejected due to Brazilian/Russian/Korean certificate missing.
+Actually, we cannot understand the rejection reason. PEGI (for Russia) and DJCTQ (replaced by PEGI, for Brazil) was submitted with the build. South Korea was unchecked in the "Market selection" section.
+So, if the build will be rejected again due to certification issue, could you, please, write a couple of words to more precicely describe needed certificates? We didn't change anything in "Game Ratings" section since previous successfull submission and honestly confused by the rejection.
+
+Sincerely, Alex Baranov.
+
+9 июля 2015, четверг.
+4. Кабели Диме и Саше Анисимову.
+6. Художественные картинки.
+7. Гит в свн для Дениса. 
+ok-9. Мобильник Антону.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+-15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+ok-20. Саппорт.
+ok-21. Скрин планеты для айфона, 150->175.
+ok-22. Программы в аккаунте Оперы - Ева.
+ok-23. Solitaire Mystery: Stolen Power HD для Win8.
+ok-28. Инаппы в synapsy.
+
+Starter Kit	GBP 1,49  2,08 EUR   2.31 USD
+450 mana 	GBP 1,30  1,81 EUR   2.01 USD
+1000 mana 	GBP 2,49  3,47 EUR   3.87 USD
+3000 mana	GBP 6,29  8,77 EUR   9.77 USD
+10000 mana 	GBP 17,99 25,08 EUR  27.94 USD
+30000 mana 	GBP 32,20 44,89 EUR  50.00 USD
+Infinite ma GBP 64,46 89,87 EUR  100.00 USD
+
+10 июля 2015, пятница.
+4. Кабели Диме и Саше Анисимову.
+ok-6. Художественные картинки.
+7. Гит в свн для Дениса.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+-15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+ok-29. Саппорт-тикеты, почта.
+ok-30. Антону 2 ключа.
+ok-31. Бекапы.
+
+13 июля 2015, понедельник.
+7. Гит в свн для Дениса.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+-15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+ok-32. Synapsy - Ева.
+ok-33. Саппорт - тикеты, почта.
+34. Amazon - God 2 версии, Devil 2 версии. Саша Анисимов. Залить, Полу отписать.
+ok-35. Сделать гугл-таблицу с ин-аппами по танкам.
+36. Спросить у Антона про телефон.
+ok-37. Бекапы.
+-38. Ачивки для пиксельного Года для iOs (круглые) и для Андроида. 8 штук, дескрипшены стандартные. Английское описалово. 175 миллионов.
+39. Цены на девайсы.
+40. Взять на контроль скрины (Дима скринит, Андрей обрабатывает) и зафигачить их в айтюнс в 8-битный дудлгод.
+41. Завести новые иконки и ин-аппы для iOS и Андроида для 8 бит.
+	.иконка в гуглплее.
+	.иконка в айтюнс.
+	  .инапп в гуглплее.
+	ok.инапп в айтюнс.
+42. Удалить один из проектов из гуглплея.
+ok-43. Залить билд в гуглплей.
+44.
+
+Samsung Galaxy Note 4 25-30к
+Samsung Galaxy S5 15-20к
+Xiaomi HM-Note
+LG g3 8-20к
+Xiaomi 4
+Google Nexus 5 22к
+Sony Xperia Z3 15-20к
+Oneplus 10-18к
+Samsung Galaxy Note 3 12-18к
+Asus ZenFone5 7к
+
+14 июля 2015, вторник.
+7. Гит в свн для Дениса.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+-15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+ok-34. Amazon - God 2 версии платный телефонный и HD, Devil 2 версии. Саша Анисимов. Залить, Полу отписать.
+36. Спросить у Антона про телефон.
+ok-38. Ачивки для пиксельного Года для iOs (круглые) и для Андроида. 8 штук, дескрипшены стандартные. Английское описалово. 175 миллионов.
+	ok.ачивки в гугле.
+	.ачивки в айтюнсе.
+39. Цены на девайсы.
+ok-40. Взять на контроль скрины (Дима скринит, Андрей обрабатывает) и зафигачить их в айтюнс в 8-битный дудлгод.
+ok-41. Завести новые иконки и ин-аппы для iOS и Андроида для 8 бит.
+	ok.иконка в гуглплее.
+	ok.иконка в айтюнс.
+	ok.инапп в гуглплее.
+	ok.инапп в айтюнс.
+42. Удалить один из проектов из гуглплея.
+ok-44. Добавить описания для инаппа в гугле и русский язык.
+	ok.описание инаппа.
+	ok.русский язык.
+45. 
+
+15 июля 2015, среда.
+16 июля 2015, четверг.
+7. Гит в свн для Дениса.
+-10. OEM отчеты Олегу. Проверить, может, ещё что есть.
+ok-12. Антону 4к монитор. http://4k-monitor.ru/
+13. Понасоздавать аккаунтов в iTunes.
+ok-15. Денис - вопрос про .psd.
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+36. Спросить у Антона про телефон.
+ok-39. Цены на девайсы.
+42. Удалить один из проектов из гуглплея.
+45. UPS на сервер.
+46. SSD Саше Анисимову.
+47. Заполнить 8бит на винде и винфоне. Локализация скринов, инаппа. Билд для винфона - у Лёши Збрицкого.
+ok-48. Залить скрины на гугл.
+49. PS3 девкит.
+ok-50. Кейворды.
+
+http://www.windowsphone.com/s?appid=44f3a06a-3e6c-4e2e-97a2-3239c3428645
+
+http://www.windowsphone.com/s?CN=A2326E99-D1E8-42A9-8C91-4B2622353494
+
+pixel, old school, 8bit, pixelart, 8-bit, 8_bit,
+
+ok-51. Понедельные отчёты по всем играм за год. Отдать Лёше Киселёву. И винфон тоже.
+ok-52. Воду заказать в пятницу.
+53. Саша Юргенс нарисовал новые здания 16 и 17 июля. Внести в реестр.
+54. Amazon Fire Phone.
+55. В понедельник - 10кг бананов. 2 и 2 - яблок.
+56. По всем ОЕМ - закачки.
+57. Решить проблему с сертификатом Дикобраза.
+58. Понедельные отчёты по DD и DK платным с инаппами на винфоне за год. Отдать Лёше Киселёву.
+59.
+
+Acer: Doodle God Free Plus - 20035
+	  Doodle God Plus - 880
+	  Doodle Devil Free Plus - 6513
+	  Doodle Devil Plus - 120
+
+Asus: Doodle God™ Free (ASUS) - 519
+	  Doodle God™ (ASUS) - 34
+	  Doodle Devil™ Free (ASUS) - 1043
+	  Doodle Devil™ (ASUS) - 9
+
+Dell: Doodle God Free for Dell - 5678
+	  Doodle God for Dell - 82
+	  Doodle Devil Free for Dell - 2796
+	  Doodle Devil for Dell - 15
+
+HP:   Doodle God Free for HP - 7498
+	  Doodle God for HP - 69
+	  Doodle Devil Free for HP - 7996
+	  Doodle Devil for HP - 34
+
+Lenovo:  
+	  Doodle God Free for Lenovo - 3831
+	  Doodle God for Lenovo - 14
+	  Doodle Devil Free for Lenovo - 3479
+	  Doodle Devil for Lenovo - 7
+
+Samsung:
+	  Doodle God Free for Samsung - 4577
+	  Doodle God for Samsung - 42
+	  Doodle Devil Free for Samsung - 735
+	  Doodle Devil for Samsung - 34
+
+Sony: Doodle God Free (V) - 177
+	  Doodle God (V) - 13
+	  Doodle Devil Free (V) - 112
+	  Doodle Devil (V) - 1
+
+Toshiba:
+	  Doodle God Free for Toshiba - 614
+	  Doodle God for Toshiba - 178
+	  Doodle Devil Free for Toshiba - 1330
+	  Doodle Devil for Toshiba - 31
+
+30 неделя, 20-24 июля 2015.
+
+Finished:
+ok-55. В понедельник - 10кг бананов. 2 и 2 - яблок.
+ok-56. По всем ОЕМ - закачки.
+ok-66. Залить билды в танки, раздать тестерам.
+ok-57. Решить проблему с сертификатом Дикобраза.
+self-63. Саше Юргенсу помочь с часом времени в гмыле. Час вперед, адрес джойбитовский.
+ok-58. Понедельные отчёты по DD и DK платным с инаппами на винфоне за год. Отдать Лёше Киселёву.
+ok-54. Amazon Fire Phone.
+ok-49. PS3 девкит.
+
+Бабло.
++20 000 - Антон на Плейстейшн.
++14 000 - Олег на Файрфон.
++ 2 000 - Олег на бананы.
++ 1 000 - Олег на воду.
+--------
++37 000
+- 1 000 - бананы.
+--------
++36 000
+-   600 - вода.
+--------
++35 400
+-12 000 - Файрфон.
+--------
++23 400
+- 3 000 - залог за плейстейшн.
+--------
++20 400
+-13 000 - доплата за плейстейшн.
+--------
++ 7 400
+- 4 000 - возврат Антону сдачи за плейстейшн.
+--------
++ 3 350
+- 1 000 - доплата за люмию.
+--------
++ 2 350
+
+
+31 неделя, 27-31 июля 2015.
+
+Finished:
+late-36. Спросить у Антона про телефон.
+discarded-68. Кофе купить.
+ok-47. Заполнить 8бит на винфоне. Локализация скринов, инаппа. Билд для винфона - у Лёши Збрицкого.
+ok-69. Лёшё Збрицкому помочь с мышой и клавой на задних юсб-портах.
+ok-42. Удалить один из проектов из гуглплея.
+ok-73. Согласовать иконку locked achievement для амазона.
+ok-74. SSD Лёше Криворотько.
+ok-71. Заполнить 8бит на амазоне.
+ok-72. Собрать и залить 8бит на винфон. В файле WP8device.cpp закомментить define Test paid.
+ok-46. SSD Саше Анисимову.
+
+In progress:
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+53. Саша Юргенс нарисовал новые здания 16 и 17 июля. Внести в реестр.
+61. Паше Барто найти 2013 офис ломаный.
+67. Поменять consumable/entitlement в амазоне.
+70. Заполнить 8бит на винде. Локализация скринов, инаппа.
+
+Perspective:
+7. Гит в свн для Дениса.
+13. Понасоздавать аккаунтов в iTunes.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+45. UPS на сервер.
+59. Бекапы, саппорт.
+60. Проверить american-ip.
+62. Паше Барто организовать форточки домой.
+64. Сделать схему локальной сети.
+
+Long perspective:
+65. https://www.cisco.com/web/learning/training-index.html
+
+Personal.
+ok-p1. Найти векторный редактор из поста.
+p2. Поставить на Нокию муми-троллей.
+p3. Поставить на Нокию навигацию.
+p4. Попробовать Creature House Expression 3.328.
+p5. Купить переходник для 2.5 -> 3.5
+p6. Обзавестись ящиками.
+p7. Прикупить ручку и коврик к двери.
+. Серджио Леоне "Однажды в Америке".
+. "Крестным Отцом".
+. Cradle (Adventure game).
+.. фотоаппарат.
+
+pine-1. Подобрать и выучить музыку к сампо.
+pine-2. Собрать в кучу все элементы, что учили.
+pine-3. Подготовить рассказ про Хибины. На час.
+pine-4. Привестись в физическую форму.
+pine-5. Привестись в ментальную форму.
+pine-6. Подготовить открытку.
+pine-7. Взять фотоаппарат в аренду.
+pine-8. Подобрать места для посещения.
+pine-9. Вычистить машину.
+pine-10. Коньки?
+pine-11. Ван Стиллер.
+
+Конструктор-3
+eNrtmlEOgyAQRHXHH8/QK/S/Z+n9L9K0MSoKSBe2SB2MTeO4+2A/JktwuA+38dmP
+j37oNNfVAntdoGgDu58HNjRVrpFr5Bq5xuUSXWCvDfyCKGWmeurAGmvsygT+Ubvy
+aeckPD4qAO+dr8r7X5B7pMbmHJStM5N7HS6msefOj6f3Xa6TYpd5jXfVJelWfT/f
+ThsON6wK9GoCd3Ebf/rVWNXEsaWhw/Qzh1sbU9AQkxzzrCoazEwuuVmZwTrXUZu2
+SqpUqVKlVR7utex2cWaZySX3KBYxFZrYJuuc00XTKgu293aZySXX0Bygt1ld5spc
+dpUFVDSYmVxyszKDdT6zVZ71qNtu815ra09uU9y0o+54H4UoN/lAWqKH2WJ2EJ7D
+9VUEvloVPQE3tkr/na/+YUdK7nW4609dNla5+bonmBnfcOHpLBqu8/5rIUl0hgqO
+9AICnceJ
+
+Конструктор-4
+eNrtWut6gyAMrTn+2TPsFfZ/z7L3f5FVQE1CwAu10xn56tYeTi4UQmjsv/rPj5/u
+47vrH3uaE09JpNB2aez2mtqFlv+/wkduKrlG13hhjd0+jVQiHqbx9aO63Lp9RNpL
+fOwn/o+9g+yBWCLO82XFTuI78rmIIZ2j8hVQAOarHX3iQxemEExvfId4FdDECriF
+RuJwZ+hgwyg3ETlKs8ZEFNxEpgmSKBJ/9E1KnloSrfWme5Jb4pJzNRc17jRVTC5V
+uVqy4AL9A8NKKn3Fwz2uNUvC6JbEaXJ2nEo2niZbFCAnL40z8GmewsOb8SME4wYn
+wPowCbGnlDGtruhiICs80aMRUYfuwBYvVTpEM6YOQxcdHNL4xj/JweMjVylirgqp
+jjp6dRRulaNN6F1DJVoki0zYuc69M4q7jNVNQyVKsXJNIBVHqY0LzbmHcVHjooHb
+FEireSMukXNWgyHEbygeKj2r9Czr9FysD4ZvzCpx/QP4bfJGD5VWVtkSKufCkHOv
+wsWb9G5Dcf1VBrxprK4RKttr4fXdHwu5QbbT59U2qlfKs1r43Bs2Komyyh7qgGRX
+ytkBTp7jVlV/GWFr5ZhkXfhuenUtXFXKiSp6FyrlNb3ZMxasTM41GzVwdmy1KuTF
+sYJtFfEfG8poNidF3miiaoltX4NZbqqL4ZsjwzE17peESvvVjtonHWk2e6ao6BRQ
+QrPD1Bwq4wjaeQXMU9gYKm2jWb4KZL7lNr/26Fcy6+gj50n0okVvNbtDTe+273dD
+voqiRwDBmrH8+aclq9RjcBazGCo1imlJo+YRypKVcrX2/yAiWdcvicbKKA==
+
+32 неделя, 3-7 августа 2015.
+
+Finished:
+ok-76. Альфу 8бит - в гугл.
+ok-77. Залить картинки для SM: Stolen Power HD (Full).
+ok-p6. Обзавестись ящиками.
+ok-p7. Прикупить ручку к двери.
+ok-62. Паше Барто организовать форточки домой.
+ok-61. Паше Барто найти 2013 офис ломаный.
+ok-82. Универсальный билд для гугла от Димы в бету.
+ok-81. Поменять иконки в описании в сторе на синие для платных версий DG GP.
+ok-83. По 81 и 82 отписаться Толе в почту.
+ok-80. DG pixel WP, Win собрать, залить.
+
+In progress:
+16. Антону перевесить люстру на тросик и уменьшить высоту.
+53. Саша Юргенс нарисовал новые здания 16 и 17 июля. Внести в реестр.
+67. Поменять consumable/entitlement в амазоне. DG. DG paid-free, залить, Полу написать.
+70. Заполнить 8бит на винде. Локализация скринов, инаппа.
+75. SSD 256, HDD 1Tb WD Blue, WiFi Acess Point бн купить.
+78. DGpixel в GP можно релизить.
+79. Монитор Антону.
+84. Включить SSD Лёше Криворотько.
+85. Саше Анисимову выдать перечень игр, в которых поменяются инаппы.
+86. В Амазоне пробежаться по security profiles, ассоциировать.
+87.
+
+Perspective:
+7. Гит в свн для Дениса.
+13. Понасоздавать аккаунтов в iTunes.
+24. Поднять камеру.
+25. Добавить винт на сервер.
+26. Поменять винт на шлюзе.
+27. Поменять винт на American-ip.
+45. UPS на сервер.
+46. SSD Саше Анисимову.
+59. Бекапы, саппорт.
+60. Проверить american-ip.
+64. Сделать схему локальной сети.
+
+Long perspective:
+65. https://www.cisco.com/web/learning/training-index.html
+
+Personal.
+p2. Поставить на Нокию муми-троллей.
+p3. Поставить на Нокию навигацию.
+p4. Попробовать Creature House Expression 3.328.
+p5. Купить переходник для 2.5 -> 3.5
+p8. Прикупить коврик к двери.
+. Серджио Леоне "Однажды в Америке".
+. "Крестным Отцом".
+. Cradle (Adventure game).
+. Пикуль. https://vk.com/wall-47206871_146659
+. Создать личное хранилище файлов, гит репозиторий и ваще.
+. Гумилёв. Стихи.
+
+33 неделя, 10-14 августа 2015.

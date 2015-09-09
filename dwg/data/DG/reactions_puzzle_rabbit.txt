@@ -1,0 +1,3 @@
+Egg,Air,Bird
+Grass,Bird,Nest
+Nest,Rabbit,Easter Egg

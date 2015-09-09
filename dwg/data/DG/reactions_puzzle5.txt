@@ -1,0 +1,10 @@
+Swamp,Life,Bacteria
+Swamp,Life,Bacteria
+Bacteria,Swamp,Worm,Sulfur
+Livestock,Grass,Milk,Manure
+Bacteria,Water,Plankton
+Stone,Plankton,Shells
+Shells,Stone,Limestone
+Limestone,Manure,Saltpetre
+Saltpetre,Sulfur,Gunpowder
+Gunpowder,Fire,Firecracker

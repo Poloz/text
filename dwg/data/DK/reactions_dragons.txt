@@ -1,0 +1,51 @@
+Candle,Grass,Fire,Ash
+Candle,Leaves,Fire,Ash
+Fire,Grass,Ash
+Fire,Leaves,Ash
+Grass,Water,Tree,Leaves
+Tree,Fire,Coal
+Earth,Fire,Lava
+Lava,Water,Stone
+Earth,Water,Dirt
+Dirt,Grass,Moss
+Stone,Stone,Stone nest
+Stone,Fire,Lava
+Stone nest,Grass,Soft nest
+Stone nest,Grass,Soft nest
+Lava,Stone nest,Hot nest
+Hot nest,Water,Stone nest
+Stone,Water,Sand
+Sand,Fire,Glass
+Glass,Water,Aquarium
+Moss,Water,Weed
+Egg,Fire,Omelet
+Aquarium,Weed,Water nest
+Egg,Sand,Snake
+Snake,Water,Fish
+Egg,Water,Fish
+Egg,Hot nest,Egg fire dragon
+Egg fire dragon,Fire,Baby fire dragon
+Baby fire dragon,Ash,Child fire dragon
+Child fire dragon,Coal,Young fire dragon
+Child fire dragon,Leaves,Ash
+Child fire dragon,Grass,Ash
+Child fire dragon,Tree,Coal
+Young fire dragon,Lava,Adult fire dragon
+Egg,Stone nest,Egg stone dragon
+Egg stone dragon,Sand,Baby stone dragon
+Baby stone dragon,Earth,Child stone dragon
+Baby stone dragon,Dirt,Child stone dragon
+Child stone dragon,Sand,Young stone dragon
+Young stone dragon,Stone,Adult stone dragon
+Egg,Soft nest,Egg green dragon
+Egg green dragon,Leaves,Baby green dragon
+Egg green dragon,Grass,Baby green dragon
+Baby green dragon,Moss,Child green dragon
+Child green dragon,Grass,Young green dragon
+Child green dragon,Leaves,Young green dragon
+Young green dragon,Tree,Adult green dragon
+Egg,Water nest,Egg water dragon
+Egg water dragon,Sand,Baby water dragon
+Baby water dragon,Water,Child water dragon
+Child water dragon,Weed,Young water dragon
+Young water dragon,Fish,Adult water dragon

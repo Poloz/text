@@ -1,0 +1,12 @@
+Wood,Tools,Wheel
+Wood,Wheel,Cart
+Metal,Human,Tools
+Tree,Tools,Wood,Tools
+Wood,Fire,Coal,Ash
+Tree,Fire,Coal,Ash,Ash
+Water,Air,Steam
+Stone,Stone,Fire,Stone,Stone
+Fire,Stone,Metal
+Metal,Steam,Boiler
+Boiler,Coal,Steam-engine
+Steam-engine,Cart,Locomotive

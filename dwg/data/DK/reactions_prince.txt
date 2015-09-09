@@ -1,0 +1,38 @@
+Prince,Village,Tavern,Peasant
+Prince,Castle,Lazy knights,Rusty weapon
+Prince,Tavern,Innkeeper,Drunken smith,Thief
+Prince,Forest,Druid,Backwoods
+Prince,Druid,Recipe,Dragon's blood
+Prince,Recipe,Recipe 
+Dogberry,Water lily,Fragrant mixture
+Fragrant mixture,Dragon's blood,Potion of sobriety
+Potion of sobriety,Drunken smith,Smith
+Smith,Castle,Forge
+Forge,Rusty weapon,Sharp weapon
+Gold,Innkeeper,Beer
+Beer,Peasant,Drunken peasants
+Prince,Drunken peasants,Militia
+Potion of persuading,Drunken peasants,Militia 
+Prince,Backwoods,Dark cave,Dogberry,Pond
+Prince,Dark cave,Sleeping dragon,Stone
+Prince,Pond,Mermaid,Water lily
+Stone,Pond,Mermaid
+Mermaid,Necklace,Potion of persuading
+Potion of persuading,Lazy knights,Knights
+Thief,Sleeping dragon,Gold,Broken necklace
+Knights,Sleeping dragon,Dragon's blood,Gold,Empty cave
+Prince,Empty cave,Ore
+Broken necklace,Smith,Necklace
+Broken necklace,Forge,Necklace
+Ore,Smith,Plow,Pick
+Ore,Forge,Plow,Pick
+Plow,Peasant,Plowman
+Pick,Peasant,Rockshaper
+Rockshaper,Castle,Castle wall
+Rockshaper,Village,Mill
+Rockshaper,Beer,Drunken peasants
+Plowman,Beer,Drunken peasants
+Drunken Peasants,Beer,Drunken peasants
+Smith,Beer,Drunken Smith
+Beer,Dragon's blood,Potion of sobriety 
+Peasant,Gold,Milk,Meat

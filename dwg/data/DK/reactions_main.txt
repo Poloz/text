@@ -1,0 +1,257 @@
+Life,Mountains,Dwarf
+Life,Flatlands,Human,Animal,Forest
+Life,Forest,Elf
+Animal,Air,Bird
+Life,Air,Bird
+Bird,Animal,Pegasus
+Bird,Bird,Egg
+Bird,Forest,Egg
+Egg,Magic,Dragon
+Egg,Darkness,Dragon
+Human,Flatlands,Peasant
+Flatlands,Peasant,Arable
+Tools,Flatlands,Arable
+Human,Mountains,Stone
+Peasant,Mountains,Stone
+Human,Stone,House
+Peasant,Stone,House
+Human,Forest,Lumber,Berries
+Human,Lumber,Hut
+Peasant,Lumber,Hut
+Human,Animal,Livestock
+Peasant,Animal,Livestock
+Arable,Animal,Livestock
+Hut,Arable,Village
+Hut,Hut,Village
+Hut,House,Village
+House,House,Village
+Human,Mine,Ore
+Human,Ore,Metal
+Human,Metal,Weapon
+Metal,Skin,Armor
+House,Fire,Forge
+House,Metal,Forge
+Peasant,Weapon,Militia
+Human,Weapon,Soldier
+Human,Power,Noble
+Human,Gold,Power
+Noble,Weapon,Knight
+Noble,Chariot,Knight
+Noble,House,Castle
+Knight,House,Castle
+Castle,House,Town
+Castle,Village,Town
+Knight,Soldier,Army
+Noble,Soldier,Army
+Dwarf,Mountains,Cave,Mine,Dwarven town
+Town,Cave,Dwarven town
+Dwarf,Cave,Fire,Lava,Darkness
+Dwarf,Stone,Statue
+Statue,Life,Golem
+Mine,Darkness,Catacombs
+Cave,Darkness,Catacombs
+Catacombs,Human,Zombie
+Human,Cave,Darkness
+Dwarf,Mine,Ore,Dwarf-miner
+Dwarf-miner,Mine,Gold,Gem
+Fire,Ore,Metal
+Dwarf,Lava,Forge
+Dwarf,Metal,Weapon,Tools
+Metal,Forge,Weapon,Tools
+Metal,Magic,Mithril
+Lava,Magic,Demon
+Lava,Life,Demon
+Darkness,Life,Demon
+Dwarf,Weapon,Dwarf-warrior
+Dwarf,Mithril,Mythril armor
+Dwarf-warrior,Mythril armor,Dwarven king
+Dwarven king,Dwarf,Power
+Dwarf,Lumber,Catapult
+Stone,Lumber,Catapult
+Orc,Lumber,Ram
+Troll,Lumber,Ram
+Orc,Cart,Siege tower
+Troll,Cart,Siege tower
+Elf,Forest,Elven town
+Elf,Mithril,Mythril armor
+Elf,Stone,Statue
+Elf,Metal,Tools
+Elf,Lumber,Bow
+Elf,Weapon,Bow
+Elf,Cart,Chariot
+Elf,Bow,Ranger
+Human,Bow,Hunter
+Hunter,Animal,Hunter,Skin
+Hunter,Tools,Trap
+Ranger,Tools,Trap
+Trap,Hunter,Meat,Skin
+Trap,Human,Corpse
+Trap,Orc,Corpse
+Trap,Dwarf,Metal,Dwarf
+Ranger,Forest,Meat,Skin,Berries
+Hunter,Forest,Meat,Skin
+Stone,Forest,Ruins
+Magic,Forest,Druid
+Elf,Livestock,Unicorn
+Druid,Livestock,Unicorn
+Druid,Stone,Stone circle
+Livestock,Magic,Unicorn
+Unicorn,Air,Pegasus
+Elf,Darkness,Orc
+Elf,Cave,Dark elf
+Elf,Catacombs,Dark elf
+Animal,Orc,Warg
+Animal,Darkness,Warg
+Warg,Human,Werewolf
+Orc,Warg,Orc rider
+Life,Stone,Troll
+Life,Cave,Troll
+Demon,Air,Dragon
+Tools,Lumber,Wheel
+Wheel,Lumber,Cart
+Cart,Livestock,Team
+Team,Soldier,Chariot
+Wheel,House,Siege tower
+Cart,House,Siege tower
+Wheel,Hut,Siege tower
+Cart,Hut,Siege tower
+Cart,Ram,Siege tower
+Flatlands,Air,Flying island
+Mountains,Air,Flying island
+Livestock,Flying island,Pegasus
+Bird,Fire,Phoenix
+Bird,Lightning bolt,Thunderbird
+Forest,Tools,Lumber
+Elf,Magic,Magician
+Human,Magic,Magician
+Magician,House,Mage tower
+Magician,Castle,Mage tower
+Magician,Stone,Rune
+Magic,Stone,Stone circle
+Magic,Fire,Fire storm
+Magic,Flatlands,Earthquake
+Magic,Air,Lightning bolt
+Magician,Fire,Fire storm
+Magician,Flatlands,Earthquake
+Magician,Air,Lightning bolt
+Life,Forest,Ent
+Ghost,Forest,Ent
+Druid,Stone circle,Ent
+Earthquake,Cave,Collapse
+Earthquake,Mine,Collapse
+Earthquake,Mountains,Avalanche
+Avalanche,Town,Ruins
+Collapse,Dwarven town,Ruins
+Fire storm,Town,Ruins,Ash
+Dragon,Town,Ruins
+Lava,Town,Ruins
+Lava,Dwarven town,Ruins 
+Army,Town,Ruins
+Dragon,Town,Ruins
+Ruins,Magic,Ghost
+Life,Ash,Ghost
+Ruins,Darkness,Ghost,Zombie
+Ghost,Human,Zombie
+Darkness,Human,Zombie
+Castle,Darkness,Dark fortress
+Ruins,Zombie,Dark fortress
+Mage tower,Darkness,Dark fortress
+Life,Fire,Fire elemental
+Tools,Livestock,Skin,Meat
+Weapon,Livestock,Skin,Meat
+Hunter,Animal,Skin,Meat
+Ranger,Animal,Skin,Meat
+Skin,Tools,Parchment
+Parchment,Magic,Scroll
+Parchment,Rune,Scroll
+Scroll,Magician,Spellbook
+Parchment,Magician,Spellbook
+Scroll,Scroll,Spellbook
+Rune,Weapon,Enchanted weapon
+Scroll,Fire,Fire storm
+Scroll,Lightning,Lightning bolt
+Scroll,Life,Resurrection
+Resurrection,Corpse,Human
+Spellbook,Darkness,Necronomicon
+Air,Lightning bolt,Thunder
+Air,Darkness,Thunder
+Lightning bolt,Forest,Fire
+Lightning bolt,Human,Bones,Ash
+Fire,Human,Bones,Ash
+Fire storm,Human,Bones,Ash
+Lightning bolt,Animal,Ash
+Fire,Animal,Ash
+Fire storm,Animal,Bones,Ash
+Lightning bolt,Peasant,Bones,Ash
+Fire,Peasant,Bones,Ash
+Fire storm,Peasant,Bones,Ash
+Lightning bolt,Soldier,Bones,Weapon
+Fire,Peasant,Bones,Ash,Weapon
+Fire storm,Peasant,Bones,Ash,Weapon
+Lightning bolt,Elf,Bones,Ash
+Fire,Elf,Bones,Ash
+Fire storm,Elf,Bones,Ash
+Lightning bolt,Dwarf,Bones,Ash
+Fire,Dwarf,Bones,Ash
+Fire storm,Dwarf,Bones,Ash
+Lightning bolt,Orc,Bones,Ash
+Fire,Orc,Bones,Ash
+Fire storm,Orc,Bones,Ash
+Fire,Lumber,Ash
+Fire,Forest,Fire,Fire,Fire
+Fire,Hut,Ash
+Fire,House,Stone,Stone,Ash
+Fire,Parchment,Ash
+Poison,Human,Corpse
+Poison,Elf,Corpse
+Poison,Dwarf,Corpse
+Poison,Noble,Corpse
+Poison,Knight,Corpse
+Poison cloud,Human,Corpse
+Poison cloud,Elf,Corpse
+Poison cloud,Dwarf,Corpse
+Poison cloud,Noble,Corpse
+Poison cloud,Knight,Corpse
+Peasant,Orc,Orc,Corpse
+Knight,Orc,Knight,Corpse
+Knight,Orc rider,Knight,Corpse
+Human,Orc,Orc,Corpse
+Dwarf,Orc,Dwarf,Corpse
+Dwarf,Orc rider,Orc rider,Corpse
+Noble,Orc,Orc,Corpse,Gold
+Thunder,Magic,Lightning bolt
+Thunder,Bird,Thunderbird
+Fire,Mountains,Volcano
+Mountains,Lava,Volcano
+Berries,Darkness,Poison
+Meat,Darkness,Poison
+Poison,Scroll,Poison cloud
+Life,Magician,Summon
+Scroll,Zombie,Summon
+Scroll,Ghost,Summon
+Scroll,Demon,Summon
+Scroll,Phoenix,Summon
+Scroll,Thunderbird,Summon
+Scroll,Fire elemental,Summon
+Human,Necronomicon,Cultist
+Elf,Necronomicon,Cultist
+Dark elf,Necronomicon,Cultist
+Magician,Necronomicon,Cultist
+Magician,Darkness,Cultist
+Life,Sea,Fish
+Beast,Sea,Fish
+Human,Fish,Mermaid
+Demon,Sea,Kraken
+Lumber,Sea,Raft
+Earthquake,Sea,Tsunami
+Mountains,Sea,Iceberg
+Human,Sea,Triton
+Town,Sea,Atlantis
+Ruins,Sea,Atlantis
+Cart,Sea,Ship
+Tsunami,Town,Ruins
+Elf,Sea,Triton
+Human,Atlantis,Triton
+Raft,Wheel,Cart
+Earthquake,Atlantis,Ruins,Tsunami
+Orc,Cave,Goblin

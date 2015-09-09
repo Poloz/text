@@ -1,0 +1,9 @@
+Weapon,Sin,Wrath
+Wrath,Man,Warrior
+Warrior,Werewolf,Wool
+Wool,Tools,Fabric
+Fabric,Woman,Clothing
+Darkness,Animal,Demon
+Demon,Energy,Magic
+Woman,Magic,Witch
+Witch,Clothing,Witch cap

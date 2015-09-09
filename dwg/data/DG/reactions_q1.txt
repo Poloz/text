@@ -1,0 +1,28 @@
+Assassin,Chaos,Joker present
+Assassin,Water,Pirate
+Human,Death,Zombie
+Human,Tree,Wood
+Human,Weapon,Assassin
+Human,Zombie,Brains present
+Magic,Glass,Crystall ball present
+Magic,Quicksilver,Philosophers stone present
+Metal,Human,Weapon
+Metal,Philosophers stone present,Gold present
+Metal,Water,Quicksilver
+Music,Wood,Guitar present
+Philosophers stone present,Water,Beer present
+Pirate,Spirit,Rum present
+Pirate,Vodka present,Rum present
+Religion,Death,Sacrifice present
+Sand,Fire,Glass
+Spirit,Bread,Beer present
+Spirit,Grass,Absinthe present
+Spirit,Wheat,Beer present
+Sun,Glass,Sunglasses present
+Void,Fire,Sun
+Void,Weapon,Death star present
+Water,Fire,Spirit
+Water,Spirit,Vodka present
+Wheat,Human,Bread
+Worm,Spirit,Tequila present
+Worm,Vodka present,Tequila present

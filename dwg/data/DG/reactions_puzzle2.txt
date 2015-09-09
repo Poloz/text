@@ -1,0 +1,13 @@
+Swamp,Life,Bacteria
+Bacteria,Water,Plankton
+Stone,Plankton,Shells
+Stone,Stone,Fire,Stone,Stone
+Clay,Limestone,Cement
+Water,Cement,Concrete
+Fire,Sand,Glass
+Shells,Stone,Limestone
+Water,Earth,Swamp
+Swamp,Sand,Clay
+Clay,Fire,Bricks
+Bricks,Concrete,House
+House,Glass,Skyscraper

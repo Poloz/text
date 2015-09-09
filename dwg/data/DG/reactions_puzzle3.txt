@@ -1,0 +1,8 @@
+Earth,Fire,Lava
+Air,Lava,Stone
+Water,Lava,Stone,Steam
+Air,Stone,Sand
+Water,Stone,Sand
+Fire,Sand,Glass
+Glass,Water,Ice
+Ice,Milk,Ice cream

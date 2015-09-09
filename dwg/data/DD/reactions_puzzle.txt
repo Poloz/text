@@ -1,0 +1,296 @@
+Human,Apple,Sin,Knowledge
+Lava,Water,Stone,Steam
+Lava,Air,Stone
+Earth,Fire,Lava
+Stone,Fire,Metal
+Fire,Water,Steam
+Air,Fire,Energy
+Sin,Corpse,Murder
+Sin,Sex,Lust
+Sin,Food,Gluttony
+Sin,Money,Greed,Theft
+Sin,Work,Sloth
+Sin,Weapon,Wrath
+Sin,Greed,Envy
+Sin,Sin,Pride
+Sin,Religion,Heresy
+Soul,Corpse,Resurrection
+Human,Tree,Food
+Weapon,Animal,Food,Blood
+Human,Copyright,Lawyer
+Man,Weapon,Blood
+Human,Weapon,Blood
+Human,Pride,Politician
+Woman,Magic,Witch
+Darkness,Animal,Demon
+Life,Corpse,Zombie
+Death,Corpse,Zombie
+Blood,Human,Vampire
+Human,Animal,Werewolf
+Corpse,Electricity,Frankenstein
+Human,Darkness,Mutant
+Death,Animal,Cerberus
+Magic,Egg,Dragon
+Snake,Animal,Hydra
+Demon,Energy,Magic
+Witch,Human,Diseases
+Fire,Death,Inferno
+Water,Death,Styx
+Energy,Darkness,Death
+Heresy,Religion,Sect
+Human,Metal,Weapon
+Human,Stone,House
+Weapon,Snake,Poison
+Bomb,Mushroom,Nuclear bomb
+Oil,Acid,TNT
+TNT,Metal,Bomb
+Earth,Knowledge,Oil
+Water,Sulfur,Acid
+Inferno,Air,Sulfur
+Metal,Work,Mechanism
+Earth,Seeds,Tree,Mushroom,Grass
+Grass,Fire,Tobacco
+Seeds,Energy,Coffee
+Apple,Earth,Seeds
+Demon,Mechanism,TV
+Computer,Computer,Internet
+TV,Book,Computer
+Energy,Metal,Electricity
+Mechanism,Oil,Car
+Radiowave,Computer,Cellphone
+Electricity,Air,Radiowave
+Mechanism,Computer,Robot
+Life,Computer,AI
+AI,Robot,Cyborg
+Soul,Demon,Money
+Copyright,Internet,Money
+Copyright,Knowledge,Money
+Human,Money,Work
+Man,Money,Work
+Politician,Greed,War
+Politician,Pride,War
+Human,Knowledge,Book
+Demon,Order,Copyright
+Human,Greed,Gambling
+Heresy,Human,Psycology,Atheism
+Life,Earth,Worm
+Magic,Stone,Egg
+Egg,Worm,Snake
+Animal,Diseases,Rat
+Rat,Air,Dove
+Vampire,Air,Bat
+Fish,Weapon,Piranha
+Animal,Water,Fish
+Animal,Wrath,Wolf
+Sex,Money,Censored
+Sex,Mechanism,Censored
+Magic,Computer,Stone
+Magic,TV,Stone
+Magic,Sloth,Work
+Magic,Car,Robot
+Computer,Human,Zombie
+Computer,Man,Zombie
+Coffee,Human,Work
+Wrath,Envy,Murder
+Werewolf,Human,Werewolf,Werewolf
+Vampire,Human,Vampire,Vampire
+Internet,Human,Zombie,Friendship
+Tobacco,Coffee,Poison
+Tobacco,Human,Diseases
+Tobacco,Man,Diseases
+Tobacco,Woman,Diseases
+Tobacco,Animal,Death
+Sloth,Knowledge,Robot
+Religion,Death,Heavens
+War,Nuclear bomb,Chaos
+Lawyer,Money,Greed
+Frankenstein,Cthulhu,Friendship
+Dragon,Hydra,Sex
+Human,Dragon,Ash
+Cthulhu,Styx,Suffering
+Human,War,Suffering
+Human,Life,Death,Corpse
+Human,Sloth,Car
+Robot,Sect,War
+Fire,Human,Corpse,Suffering
+Fire,Man,Corpse,Suffering
+Fire,Woman,Corpse,Suffering
+Inferno,Soul,Suffering
+Human,Prayer,Heavens,Religion
+Man,Prayer,Heavens,Religion
+Fire,Corpse,Ash
+Fire,Book,Ash
+Fire,Soul,Inferno
+Sin,Soul,Inferno
+Fire,Witch,Ash,Soul,Heavens
+Fire,Cthulhu,Wrath
+Fire,House,Ash,Suffering
+Fire,Tree,Ash
+Fire,Tobacco,Diseases
+Fire,Animal,Ash
+Soul,Religion,Heavens
+Human,Murder,Corpse,Inferno
+Dragon,Dragon,Egg,Dragon,Dragon
+Cthulhu,Weapon,Wrath
+Vampire,Light,Ash
+Woman,Gluttony,Suffering
+Acid,Human,Suffering,Skeleton
+Soul,Light,Heavens
+Demon,Human,Soul,Corpse
+Woman,Man,Sex,Life
+Light,Life,Angel
+Human,Angel,Prayer
+Human,Human,Friendship,Life
+Man,Man,Friendship
+Radiowave,Fire,Laser
+Radiowave,Radiowave,Radiation
+Void,Airplane,Rocket
+Void,Rocket,Satellite
+Void,Life,Alien
+Alien,Rocket,UFO
+Hacker,Internet,Virus
+Diseases,Human,Virus
+Virus,Human,Diseases
+Heavens,Inferno,Void
+Fire,Energy,Plasma
+Grass,Work,Cellulose
+Car,Armor,Tank
+Weapon,Bomb,Cannon
+Airplane,Bomb,Bomber
+Fish,Battle cruiser,Submarine
+Water,Cannon,Battle cruiser
+Earth,Bomb,Land mine
+Air,Radiowave,Radar
+Air,Surveillance,Radar
+Air,Mechanism,Helicopter
+Air,Cannon,Helicopter
+Oil,Fire,Napalm
+Car,Air,Airplane
+War,Chaos,Terrorism
+War,Knowledge,Surveillance
+War,Order,Army
+Politician,Army,Empire,Dictatorship
+Computer,Knowledge,Hacker
+Knowledge,Knowledge,Scientist
+Firearm,Warrior,Soldier
+Internet,Life,Cyberspace
+House,House,City
+Politician,Money,Corruption
+Rocket,Bomb,Missile
+Missile,Weapon,Bazooka
+Bomb,Soldier,Hand grenade
+Fire,Weapon,Flamethrower
+Firearm,Magic,AK-47
+Acid,Cellulose,Gunpowder
+Weapon,Gunpowder,Firearm
+Firearm,Pride,Desert eagle
+Man,Wrath,Warrior
+Man,Army,Warrior
+Human,Wrath,Warrior
+Human,Army,Warrior
+Warrior,Metal,Armor
+Magic,Man,Mutant
+Chaos,Man,Mutant
+Chaos,Human,Mutant
+Chaos,Order,Void
+Sect,Nuclear bomb,Chaos
+Politician,Oil,Money
+Death,Human,Corpse,Ghost
+Empire,Death star,Order,Darkness
+BFG 9000,Demon,Ash
+Car,Woman,Censored
+Vampire,Book,Censored
+Vampire,Werewolf,Censored
+Cyborg,Politician,Censored
+Internet,Lust,Censored
+Sex,Internet,Censored
+Sex,Sex,Censored
+Space ship,City,Death star
+Force field,Laser,Light saber
+Rocket,Battle cruiser,Space ship
+Void,Bomb,Vacuum bomb
+Weapon,Inferno,BFG 9000
+Soldier,Void,Space marine
+Soldier,Space ship,Space marine
+Plasma,Weapon,Plasmagun
+Weapon,Void,Disintegrator
+Energy,Armor,Force field
+Alien,Weapon,Death ray gun
+Weapon,Grass,Razorvine
+Mushroom,Seeds,Spore
+Spore,Life,Bacteria
+Poison gas,Bomb,Chemical weapon
+Poison gas,Missile,Chemical weapon
+Poison gas,Weapon,Chemical weapon
+Diseases,Chaos,Epidemic
+Bacteria,Weapon,Biological weapon
+Spore,Bomb,Biological weapon
+Spore,Missile,Biological weapon
+Earth,Earth,Earthquake
+Earth,Lava,Earthquake
+Water,Earthquake,Tsunami
+Chemical weapon,War,Armageddon
+Biological weapon,War,Armageddon
+Air,Poison,Poison gas
+Politician,Politician,Democracy
+Politician,Demon,Dictatorship
+Sect,Army,Communism
+Sect,Demon,Communism
+Democracy,Dictatorship,War,Oil,Money
+Democracy,Communism,Chaos
+Communism,Dictatorship,Zombie,Zombie,Zombie
+Politician,Corruption,Politician,Money
+Democracy,Corruption,Chaos
+Communism,Corruption,Chaos
+Dictatorship,Corruption,Chaos
+Human,Torture,Leather,Blood,Suffering
+Soul,Ash,Ghost
+Zombie,Corpse,Ghoul
+Religion,Murder,Sacrifice
+Water,Magic,Potion
+Magic,Leather,Scroll
+Wizard,Zombie,Necromancer
+Dove,Witch,Crow
+Dove,Demon,Crow
+Book,Magic,Spell book
+Scroll,Scroll,Spell book
+Weapon,Magic,Wand
+Corpse,Earth,Skeleton
+Corpse,Worm,Skeleton
+Human,Suffering,Torture
+Suffering,Suffering,Torture
+Dove,Fire,Phoenix
+Crow,Fire,Phoenix
+Energy,Human,Wizard
+House,Vampire,Castle
+House,Armor,Castle
+Wizard,House,Tower
+Magic,Knowledge,Spell
+Animal,Magic,Unicorn
+Unicorn,Dove,Pegasus
+Light,Human,Elf
+Angel,Earth,Elf
+Demon,Money,Mammon
+Demon,Greed,Mammon
+Demon,Water,Cthulhu
+Demon,Knowledge,Astaroth
+Demon,Pride,Astaroth
+Demon,Gluttony,Shub-Niggurath
+Demon,Sacrifice,Shub-Niggurath
+Demon,Wrath,Kronos
+Demon,War,Baal
+Demon,Weapon,Baal
+Demon,Woman,Succubus
+Demon,Lust,Succubus
+Demon,Sex,Succubus
+Demon,Stone,Medusa
+Demon,Animal,Chimera
+Demon,Mutant,Chimera
+Apple,Radiation,Pumpkin
+Pumpkin,Torch,Pumpkin head
+Tree,Tools,Stick,Apple,Wood
+Stick,Fire,Torch
+Warrior,Werewolf,Wool
+Wool,Tools,Fabric
+Fabric,Woman,Clothing
+Witch,Clothing,Witch cap

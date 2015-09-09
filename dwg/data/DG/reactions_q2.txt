@@ -1,0 +1,31 @@
+Adventurers,Dragon,Ash,Steak
+Adventurers,Experience,Party
+Adventurers,Priest,Party
+Adventurers,Quest,Experience,Gold
+Book,Magic,Spellbook
+Dead dragon,Party,Key
+Dragon,Quest,Mountain
+Dwarf,Axe,Warrior
+Human,Magic,Elf
+Human,Sword,Warrior
+Key,Lair,Gold
+King,Adventurers,Quest
+King,Party,Quest
+Lair,Rogue,Secret door
+Maze,Party,Experience,Gold,Princess
+Mountain,Dragon,Lair
+Paladin,Wizard,Party
+Party,Dragon,Dead dragon
+Priest,Dragon,Ash
+Rogue,Dragon,Ash
+Secret door,Key,Trap
+Spellbook,Elf,Wizard
+Spellbook,Human,Wizard
+Trap,Priest,Maze
+Trap,Rogue,Maze
+Trap,Warrior,Corpse
+Trap,Wizard,Ash,Maze
+Warrior,Dragon,Steak
+Warrior,Priest,Paladin
+Warrior,Wizard,Adventurers
+Wizard,Dragon,Ash

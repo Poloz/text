@@ -1,0 +1,7 @@
+Earth,Fire,Lava
+Lava,Water,Stone,Steam
+Stone,Water,Sand
+Sand,Life,Seeds
+Seeds,Earth,Tree
+Ice,Air,Snow
+Snow,Tree,Xmastree

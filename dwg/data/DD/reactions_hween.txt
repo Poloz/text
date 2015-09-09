@@ -1,0 +1,33 @@
+Fire,Stone,Metal
+Man,Metal,Weapon
+Woman,Metal,Tools
+Woman,Magic,Witch
+Acid,Man,Skeleton,Ghost
+Acid,Woman,Skeleton,Ghost
+Acid,Corpse,Skeleton
+Man,Weapon,Corpse,Ghost,Blood
+Woman,Weapon,Corpse,Ghost,Blood
+Man,Blood,Vampire
+Vampire,Stick,Corpse
+Tree,Tools,Stick,Apple,Wood
+Skeleton,Tools,Skull
+Witch,Water,Witch cap
+Skull,Stick,Grim stuff
+Vampire,Tools,Vampire teeth
+Vampire,Air,Bat
+Bat,Tools,Bat wings
+Bat,Acid,Bat wings
+Fire,Stick,Torch
+Skull,Torch,Grim skull
+Ghost,Air,Ghost balloon
+Air,Acid,Poison
+Poison,Air,Poison gas
+Poison gas,Man,Jocker
+Wood,Tools,Box
+Box,Jocker,Jack in the box
+Apple,Earth,Seeds
+Earth,Tools,Arable
+Arable,Seeds,Wheat
+Wheat,Stone,Flour
+Flour,Water,Dough
+Dough,Fire,Grim cake

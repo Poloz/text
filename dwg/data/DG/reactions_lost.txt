@@ -1,0 +1,64 @@
+Human_lost,Sea_lost,Water_lost
+Human_lost,Island,Forest,Beach,Cliffs
+Human_lost,Cliffs,Cave,Stone
+Stone,Stone,Spark
+Human_lost,Beach,Sand,Palm,Oysters
+Bushes,Human_lost,Leaves,Berries
+Stick,Stone,Hammer_lost
+Hammer_lost,Stone,Flintstone
+Stick,Flintstone,Axe_lost
+Sand,Water_lost,Clay
+Axe_lost,Stick,Spear
+Axe_lost,Tree,Wood
+Clay,Fire_lost,Pottery
+Human_lost,Palm,Liana,Coconut
+Rope,Stick,Bow_lost,Fishing rod
+Spear,Sea_lost,Fish_lost
+Snare,Sea_lost,Fish_lost
+Rope,Forest,Snare
+Human_lost,Forest,Tree,Bushes,Game
+Snare,Game,Carcass
+Game,Bow_lost,Carcass
+Game,Spear,Carcass
+Liana,Liana,Rope
+Spark,Leaves,Fire_lost
+Wood,Fire_lost,Fire_lost,Coal,Ash_lost
+Spark,Wood,Fire_lost
+Meat,Fire_lost,Steak
+Skin,Human_lost,Clothes_lost
+Axe_lost,Carcass,Meat,Skin
+Fishing rod,Sea_lost,Fish_lost
+Fish_lost,Flintstone,Meat,Bones
+Carcass,Flintstone,Meat,Bones
+Sinew,Sinew,Rope
+Rope,Bones,Needle and thread
+Needle and thread,Skin,Canvas
+Stick,Leaves,Shelter
+Human_lost,Tree,Stick,Leaves
+Sun,Clay,Bricks_lost
+Sun,Water_lost,Salt
+Sun,Meat,Jerky
+Salt,Meat,Jerky
+Bricks_lost,Bricks_lost,Walls
+Walls,Shelter,Hut
+Walls,Canvas,Hut
+Stick,Canvas,Sail
+Clay,Human_lost,Pottery
+Wood,Rope,Raft
+Raft,Sail,Sailing raft
+Raft,Sea_lost,Storm_lost
+Sailing raft,Sea_lost,Calm
+Knife,Fish_lost,Meat,Bones
+Carcass,Knife,Meat,Skin,Sinew
+Human_lost,Map,Hidden treasure
+Island,Map,Hidden treasure
+Human_lost,Hidden treasure,Gold_lost,Spyglass,Compass
+Sun,Spyglass,Fire_lost
+Spyglass,Sea_lost,White sail,Black sail
+Spyglass,Human_lost,White sail,Black sail
+Fire_lost,Leaves,Smoke_lost
+Black sail,Smoke_lost,Pirates
+Pirates,Human_lost,Death
+Pirates,Gold_lost,Torture
+Merchants,Human_lost,Salvation_lost
+White sail,Smoke_lost,Merchants

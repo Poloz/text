@@ -1,0 +1,3 @@
+Earth,Fire,Lava,attack,20,20,20,10
+Air,Fire,Energy,protection,20,20,15,15
+Earth,Air,Dust,stan,3,3,30,15

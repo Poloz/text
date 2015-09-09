@@ -1,0 +1,47 @@
+Warlock,Cave,Orc,Cauldron,Shovel
+Shovel,Cave,Catacombs
+Catacombs,Dark magic,Demon
+Warlock,Graveyard,Crypt,Grave
+Shovel,Grave,Corpse
+Warlock,Crypt,Bones,Ghost
+Ghost,Dark magic,Cursed ghost
+Orc,Dark magic,Troll
+Bones,Dark magic,Skeleton
+Skeleton,Cave,Skeleton servant
+Bones,Ghost,Skeleton
+Dark magic,Corpse,Zombie
+Corpse,Ghost,Zombie
+Warlock,Forest,Animal,Plant
+Plant,Dark magic,Poison plant
+Ghost,Forest,Walking tree
+Ghost,Animal,Werewolf
+Animal,Dark magic,Warg
+Cauldron,Lake,Cauldron with water
+Cauldron with water,Poison plant,Poison
+Cauldron with water,Plant,Soup
+Poison,Lake,Poisoned lake
+Corpse,Lake,Drowned
+Corpse,Poisoned lake,Drowned
+Drowned,Ghost,Mereman
+Demon,Lake,Horror of depths
+Demon,Poisoned lake,Horror of depths
+Orc,Poison,Corpse
+Orc,Grave,Corpse
+Orc,Forge,Stone,Lumber,Bones
+Orc,Empty forge,Stone,Lumber
+Orc,Skeleton,Bones
+Orc,Skeleton servant,Bones
+Orc,Forest,Lumber
+Orc,Cave,Stone
+Skeleton servant,Forest,Lumber
+Skeleton servant,Cave,Stone
+Lumber,Stone,Empty forge
+Empty forge,Skeleton servant,Forge
+Forge,Stone,Ore
+Skeleton servant,Stone,Ore
+Orc,Stone,Ore
+Ore,Forge,Weapon
+Weapon,Orc,Orc warrior
+Orc warrior,Warg,Orc rider
+Skeleton servant,Weapon,Skeleton warrior
+Zombie,Weapon,Zombie warrior

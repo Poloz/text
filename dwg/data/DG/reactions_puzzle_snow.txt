@@ -1,0 +1,6 @@
+Fire,Earth,Lava
+Lava,Air,Stone
+Stone,Water,Sand
+Sand,Fire,Glass
+Glass,Water,Ice
+Ice,Air,Snow

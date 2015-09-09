@@ -1,0 +1,182 @@
+Air,Dinosaur,Dragon
+Air,Earth,Dust
+Air,Egg,Bird
+Air,Energy,Storm
+Air,Fire,Energy
+Air,Lava,Stone
+Air,Lizard,Bird
+Air,Stone,Sand
+Air,Worm,Butterfly
+Alcoholic,Car,Corpse,Corpse,Alcoholic
+Animal,Cart,Team
+Animal,Hunter,Wool,Meat,Blood
+Animal,Water,Whale
+Arable,Grass,Wheat
+Assassin,Human,Corpse,Assassin
+Assassin,Warrior,Corpse,Blood,Assassin
+Bacteria,Plankton,Fish
+Bacteria,Swamp,Worm,Sulfur
+Bacteria,Water,Plankton
+Beer,Human,Alcoholic
+Beetle,Sand,Scorpion
+Bird,Bird,Egg,Bird,Bird
+Bird,Hunter,Feather,Meat,Blood
+Blood,Human,Vampire
+Boiler,Coal,Steam-engine
+Book,Fire,Ash
+Bricks,Concrete,House
+Car,Air,Airplane
+Clay,Fire,Bricks
+Clay,Human,Ceramics
+Clay,Life,Golem
+Clay,Limestone,Cement
+Demigod,Quicksilver,Philosophers stone
+Dinosaur,Dinosaur,Egg,Dinosaur,Dinosaur
+Dinosaur,Human,Dinosaur,Blood
+Dinosaur,Hunter,Dinosaur,Blood
+Dough,Fire,Bread
+Dragon,Human,Dragon,Ash
+Dragon,Hunter,Dragon,Ash
+Earth,Egg,Dinosaur
+Earth,Fire,Lava
+Earth,Lizard,Animal
+Earth,Moss,Grass
+Earth,Plankton,Worm
+Earth,Seeds,Tree
+Earth,Tools,Arable
+Earth,Weeds,Mushroom
+Earth,Worm,Beetle
+Energy,Human,Wizard
+Fabric,Human,Clothing
+Fire,Bird,Phoenix
+Fire,Corpse,Ash
+Fire,Dinosaur,Dragon
+Fire,Dust,Ash
+Fire,Energy,Plasma
+Fire,Grass,Tobacco
+Fire,Human,Corpse
+Fire,Lizard,Ash
+Fire,Phoenix,Ash,Phoenix
+Fire,Sand,Glass
+Fire,Spirit,Energy
+Fire,Stone,Metal
+Fire,Tobacco,Ash
+Fire,Treant,Ash,Ghost
+Fire,Worm,Ash
+Fish,Animal,Dolphin
+Flower,Flower,Seeds
+Flower,Tree,Apple
+Grass,Grass,Seeds
+House,Glass,Skyscraper
+Human,Animal,Livestock
+Human,Human,Sex
+Human,Poison,Corpse
+Human,Weapon,Hunter
+Life,Animal,Human
+Life,Ash,Ghost
+Life,Corpse,Zombie
+Life,Golem,Human
+Life,Sand,Seeds
+Life,Stone,Egg
+Limestone,Manure,Saltpetre
+Livestock,Cart,Team
+Livestock,Grass,Milk,Manure
+Livestock,Human,Wool,Meat,Milk
+Lizard,Lizard,Egg,Lizard,Lizard
+Metal,Energy,Electricity
+Metal,Human,Tools
+Metal,Philosophers stone,Gold
+Metal,Steam,Boiler
+Metal,Water,Quicksilver
+Moss,Fire,Ash
+Oil,Cart,Car
+Oil,Fire,Energy
+Paper,Feather,Book
+Paper,Fire,Ash
+Paper,Tobacco,Cigarette
+Philosophers stone,Alcoholic,Human
+Philosophers stone,Corpse,Human
+Philosophers stone,Egg,Dragon
+Philosophers stone,Ghost,Energy
+Philosophers stone,Grass,Flower
+Philosophers stone,Human,Demigod
+Philosophers stone,Poison,Water
+Philosophers stone,Vampire,Human
+Philosophers stone,Water,Beer
+Philosophers stone,Werewolf,Human
+Philosophers stone,Wood,Tree
+Philosophers stone,Zombie,Corpse
+Plankton,Fish,Whale
+Poisoned weapon,Human,Assassin
+Saltpetre,Sulfur,Gunpowder
+Sand,Egg,Turtle
+Sand,Tree,Palm
+Sand,Worm,Snake
+Seeds,Arable,Wheat
+Seeds,Energy,Coffee
+Shells,Stone,Limestone
+Ship,Fabric,Sailing ship
+Ship,Steam-engine,Steamship
+Snake,Fire,Ash
+Snake,Snake,Egg,Snake,Snake
+Spirit,Bread,Beer
+Spirit,Human,Alcoholic
+Spirit,Wheat,Beer
+Steam-engine,Cart,Locomotive
+Stone,Human,Hut
+Stone,Plankton,Shells
+Stone,Stone,Fire,Stone,Stone
+Stone,Wheat,Flour
+Storm,Bird,Thunderbird
+Swamp,Egg,Lizard
+Swamp,Energy,Life
+Swamp,Grass,Reed
+Swamp,Life,Bacteria
+Swamp,Moss,Fern
+Swamp,Sand,Clay
+Swamp,Weeds,Moss
+Swamp,Worm,Snake
+Tools,Metal,Weapon
+Tools,Mushroom,Poison
+Tools,Reed,Paper
+Tools,Scorpion,Poison
+Tools,Snake,Poison
+Tools,Wool,Fabric
+Tree,Fire,Coal,Ash,Ash
+Tree,Life,Treant
+Tree,Tools,Wood
+Tree,Tree,Seeds
+Turtle,Turtle,Egg,Turtle,Turtle
+Vampire,Animal,Werewolf
+Vampire,Human,Vampire,Vampire
+Vodka,Human,Alcoholic
+Warrior,Animal,Warrior,Blood
+Warrior,Dinosaur,Warrior,Blood
+Warrior,Dragon,Hero,Blood
+Warrior,Human,Corpse,Warrior,Blood
+Water,Air,Steam
+Water,Cement,Concrete
+Water,Coal,Oil
+Water,Earth,Swamp
+Water,Fire,Spirit
+Water,Flour,Dough
+Water,Lava,Stone,Steam
+Water,Life,Weeds
+Water,Snake,Fish
+Water,Spirit,Vodka
+Water,Stone,Sand
+Weapon,Gunpowder,Firearm
+Weapon,Hunter,Warrior
+Weapon,Poison,Poisoned weapon
+Wizard,Corpse,Human,Wizard
+Wizard,Energy,Demigod
+Wizard,Warrior,Worm,Wizard
+Wood,Boat,Ship
+Wood,Fire,Coal,Ash
+Wood,Tools,Wheel
+Wood,Water,Boat
+Wood,Wheel,Cart
+Worm,Snake,Lizard
+Zombie,Corpse,Ghoul
+Glass,Water,Ice
+Ice,Air,Snow

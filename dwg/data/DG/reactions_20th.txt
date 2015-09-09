@@ -1,0 +1,179 @@
+Air,Freezer,Air conditioner
+Void,Dust,Vacuum cleaner
+Void,Mechanism,Vacuum cleaner
+Air,Mechanism,Helicopter
+Clothing,Water,Washing machine
+Fabric,Glass,Cellophane
+Fabric,Oil,Cellophane
+Fabric,Air,Zeppelin
+Limestone,Oil,Crayons
+Tea,Paper,Teabag
+Tea,Fabric,Teabag
+Knowledge,Time,Theory of relativity
+Order,Work,Assembly line
+Food,Life,Vitamin
+Woman,Clothing,Bra
+Fun,Clothing,Bra
+Games,Knowledge,Crossword
+Car,Armor,Tank
+Metal,Knowledge,Stainless steel
+Clothing,Mechanism,Zipper
+Bread,Electricity,Toaster
+Lightbulb,Neon,Neon lamp
+Electricity,Neon,Neon lamp
+Air,Armor,Gas mask
+Poison,Armor,Gas mask
+Human,Knowledge,Lie detector
+Sin,Knowledge,Lie detector
+Air,Radiowave,Radar
+Airplane,Radiowave,Radar
+Bacteria,Medicine,Antibiotics
+Mechanism,Work,Robot
+Food,Fun,Bubble gum
+Games,Fun,Yo-yo
+Car,Order,Traffic lights
+Freezer,Food,Frozen food
+Glue,Fabric,Band-aid
+Sun,Glass,Sunglasses
+Knowledge,Void,Big bang theory
+Car,Money,Parking meter
+Radiowave,Knowledge,Radio telescope
+Radar,Void,Radio telescope
+Radiowave,Music,FM radio
+Games,Money,Monopoly
+Photo,Paper,Photocopier
+Fire,Mechanism,Jet engine
+Glue,Cellophane,Duct tape
+Photo,Mechanism,Polaroid
+Photo,Time,Polaroid
+Magic,Knowledge,Software
+Magic,Order,Software
+Shopping,Cart,Shopping cart
+Semiconductor,Electricity,Transistor
+Vacuum tube,Software,First computer
+Transistor,Software,First computer
+Missile,Weapon,Bazooka
+Radiowave,Food,Microwave oven
+Plutonium,Weapon,Nuclear bomb
+Plutonium,Plutonium,Nuclear bomb
+Energy,Plutonium,Nuclear power reactor
+Sun,Clothing,Bikini
+Firearm,Magic,AK-47
+Gas mask,Water,Aqualung
+Money,Shopping,Bar code
+Order,Shopping,Bar code
+Debt,Money,Credit card
+Clock,First computer,Digital clock
+Clock,Personal computer,Digital clock
+Clock,Neon lamp,Digital clock
+Clock,Transistor,Digital clock
+Clock,Semiconductor,Digital clock
+Rocket,Void,Satellite
+Robot,Void,Satellite
+Fire,Radiowave,Laser
+Semiconductor,Energy,Laser,Radiowave
+Glue,Glue,Super glue
+Glue,Time,Super glue
+Glue,Magic,Super glue
+Airplane,Earth,Black box
+Airplane,Death,Black box
+Sun,Energy,Solar cell
+Sun,Electricity,Solar cell
+Food,Time,Fast food
+Water,Paper,Liquid paper
+Transistor,Transistor,Microchip
+Personal computer,Photo,Digital photography
+First computer,Photo,Digital photography
+Human,Void,Astronaut
+Human,Rocket,Astronaut
+Photo,Life,3D holography
+Photo,Laser,3D holography
+Money,Mechanism,ATM
+Credit card,Mechanism,ATM
+Credit card,Money,ATM
+Book,Software,Hypertext
+Music,Duct tape,Audio cassette
+Music,Cellophane,Audio cassette
+Fabric,Armor,Kevlar
+Games,First computer,Video game
+Games,Personal computer,Video game
+Video game,First computer,Computer mouse
+Video game,Personal computer,Computer mouse
+Car,Void,Moon lander
+Satellite,Astronaut,Space station
+Satellite,Satellite,Space station
+Music,Games,Karaoke
+Music,Video game,Karaoke
+Microchip,Personal computer,Microprocessor
+Microchip,Microchip,Microprocessor
+Microchip,Software,Microprocessor
+Microprocessor,First computer,Personal computer
+Electricity,Car,Hybrid vehicle
+Digital photography,Life,Digital camera
+Digital photography,Time,Digital camera
+Phone,Radiowave,Cellphone
+Music,Music,Stereo
+Music,Mechanism,Stereo
+Music,Audio cassette,Stereo
+Software,Cellophane,Floppy disk
+Software,Audio cassette,Floppy disk
+Games,Puzzle,Copyright
+Book,Laser,CD
+Floppy disk,Laser,CD
+Microchip,Book,Flash memory
+First computer,Personal computer,Internet
+First computer,First computer,Internet
+Personal computer,Personal computer,Internet
+Mechanism,Life,Artificial heart
+Mechanism,Medicine,Artificial heart
+DNA,Knowledge,DNA fingerprinting
+Space station,Space station,Modular space station
+Space station,Satellite,Modular space station
+Personal computer,Software,MS-DOS
+MS-DOS,Software,Windows
+MS-DOS,Magic,Windows
+Phone,Paper,Fax machine
+Video game,Life,Virtual reality
+Internet,Hypertext,WWW
+Digital camera,Internet,Webcam
+Satellite,Knowledge,GPS
+Satellite,Digital clock,GPS
+Satellite,Radiowave,GPS
+Cellphone,Personal computer,Smartphone
+Personal computer,Order,USB
+Music,Personal computer,MP3 player
+Music,Flash memory,MP3 player
+Music,Microprocessor,MP3 player
+Music,Microchip,MP3 player
+Music,Memory card,MP3 player
+Rocket,Water,Sea launch
+Plasma,TV,Plasma TV
+Flash memory,Book,Memory card
+Flash memory,Software,Memory card
+CD,CD,DVD
+Metal,Energy,Electricity
+Void,Plasma,Sun
+Fire,Energy,Plasma
+Earth,Air,Dust
+Rocket,Human,Astronaut
+Woman,Money,Shopping
+Human,Money,Shopping
+Knowledge,Paper,Book
+Mechanism,Time,Clock
+Fabric,Human,Clothing
+Energy,Grass,Tea
+Clothing,Metal,Armor
+Void,Glass,Lightbulb
+Air,Car,Airplane
+Cart,Oil,Car
+Cart,Mechanism,Car
+Jet engine,Void,Rocket
+Airplane,Void,Rocket
+Jet engine,Air,Rocket
+Rocket,Weapon,Missile
+Lightbulb,Semiconductor,Vacuum tube
+Void,Electricity,Radiowave
+Radiowave,Fire,Laser
+Rocket,Void,Satellite
+Life,Knowledge,DNA
+Electricity,Knowledge,Semiconductor

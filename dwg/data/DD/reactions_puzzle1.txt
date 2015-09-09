@@ -1,0 +1,6 @@
+Apple,Earth,Seeds
+Earth,Seeds,Tree,Apple,Grass
+Tree,Tools,Stick,Apple,Wood
+Apple,Radiation,Pumpkin
+Stick,Fire,Torch
+Pumpkin,Torch,Pumpkin head

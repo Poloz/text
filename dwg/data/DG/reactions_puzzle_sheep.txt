@@ -1,0 +1,4 @@
+Animal,Life,Human
+Livestock,Human,Wool,Meat,Milk
+Horse,Milk,Livestock
+Livestock,Wool,Sheep

@@ -1,0 +1,6 @@
+Water,Fire,Spirit
+Fire,Spirit,Energy
+Air,Fire,Energy
+Energy,Human,Wizard
+Wizard,Energy,Demigod
+Nuclear bomb,Demigod,Demigod,Flower

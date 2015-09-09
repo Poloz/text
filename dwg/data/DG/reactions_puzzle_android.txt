@@ -1,0 +1,5 @@
+Radiowave,Lightbulb,TV
+TV,Book,Computer
+Computer,Radiowave,Cellphone
+Clay,Life,Golem
+Golem,Cellphone,Android

@@ -1,0 +1,5 @@
+Animal,Qangel,Wool
+Wool,Qangel,Rope
+Tree,Qangel,Stick
+Stick,Rope,Bow
+Angel,Bow,Love bow

@@ -1,0 +1,9 @@
+Clay,Life,Golem
+Fire,Water,Spirit
+Golem,Life,Human
+Human,Spirit,Alcoholic
+Fire,Clay,Bricks
+Clay,Limestone,Cement
+Water,Cement,Concrete
+Concrete,Bricks,House
+House,Alcoholic,Tavern

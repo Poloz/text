@@ -11,13 +11,28 @@ int main()
 	double min = 0;
 	bool first = true;
 	string unit = "";
-	double total;
+	double total = 0;
 	double converted = 0;
 	bool interrupt = false;
+	int counter = 0;
+	vector<double> ruler;
 
 	while (cin >> input >> unit)
 	{
-		cout << input << unit << "\n";
+		cout << input << unit;
+
+		//convert input to meters
+		if (unit == "cm") {converted = input * 0.01;} else
+			if (unit == "m") { converted = input; } else
+				if (unit == "in") {converted = input * 2.54 / 100;} else
+					if (unit == "ft") { converted = input * 12 * 2.54 / 100; } else
+					{ cout << "\nAchtung!! Unruled unit!\n"; continue; }
+		cout << " equal to " << converted << " m.\n";
+		ruler.push_back(converted);
+
+		total = total + converted;
+		counter++;
+
 		//calibrate on first iteration
 		if (first == true)
 		{
@@ -27,16 +42,16 @@ int main()
 			cout << "First! Max and min!\n";
 			continue;
 		}
-		//convert input to meters
-		if (unit == "cm") {converted = input * 0.01;} else
-			if (unit == "m") { converted = input; } else
-				if (unit == "in") {converted = input / 0.0254;} else
-					if (unit == "ft") { converted = input * 12 / 0.0254; } else
-					{ cout << "Achtung!! Unruled unit!\n"; continue; }
 		if (input >= max) { cout << "Maxxed!\n"; max = input; }
 		if (input <= min) { cout << "Minned!\n"; min = input; }
 	}
 
+	cout << "Total length: " << total << " m, " << counter << " items received.\n";
+	sort(ruler);
+	cout << "Ruler: ";
+	for (double output : ruler) {
+		cout << output << " ";
+	}
 	/*
 	while (cin >> input >> j)
 	{
@@ -47,7 +62,7 @@ int main()
 		cout << "Lesser: " << input << ", greater: " << j << "\n";
 	}
 	*/
-	cout << "Gotcha!\n";
+	cout << "That's all!\n";
 	keep_window_open();
     return 0;
 }

@@ -651,26 +651,58 @@ Finished:
 175. Арбор залить.
 177. Память Паше и Лёшё Криворотько посмотреть.
 24. Поднять камеру.
-
+173. номер версии в гугле закрытый порнографическим контентом
+171. Шерлок.
+126. Год пиксельный под винду и винфон собрать и засабмитить.
+184. Релиз Sherolck Holmes Adventure Full винстор.
+183. Запросить видео.
+191. Заскринить винфон, вин10, вин8.
+188. Запросить юриста про доки на запрос видео у юлука.
+195. Залить бпиц в айтюнс.
+197. Все остальные собрать для арбора.
+192. Починить Антону планшет.
+193. Купить Антону новый вайфай донгл с маленьким питанием.
+199. DD HD арбор версия не заливается.
+202. Кочневу ВПН.
+198. Второй 8-битный год под винду залить. (не нужно).
+60. Проверить american-ip.
+187. Заполнить блиц хд на гугле.
+186. Релиз альфы DG Blitz на гугле.
+201. Отреагировать на 2 письма Олега (рейтинги и убрать на гугле спам (готово)).
+203. Поставить задачи по киндомам арборовским.
+200. Установить тайгу.
+205. Джойстик для xbox one. Завтра. Збрицкий. Отложить.
+185. Релиз DG pixel underground на амазоне.
+180. Закупить память.
+179. Собрать ДД undeground с новыми иконками, оттестировать, залить.
+166. Монитор забрать.
+148. Заценить новые квесты в ДГ2 у 
+160. Смартобъекты, фильтры слоёв. Художники жалуются. Сравнить их машины, взять Ксюшину, проверить.
+210. Добавить айфон Ярослава в наш провижнинг.
+196. Найти Deals Hub в винфон 8.1.
 
 In progress:
 13. Понасоздавать аккаунтов в iTunes.
 53. Саша Юргенс нарисовал новые здания 16 и 17 июля. Внести в реестр.
 100. надо потом скачать отчеты из виндовс аккаунта и передать их серверному Леше, на игры которые ты не делал ( на все бесплатные как минимум). Сделать это за максимально возможный срок - сейчас это 12 месяцев вроде бы
 105. Собрать DD DG екзешник понято нод вин32.
-126. Год пиксельный под винду и винфон собрать и засабмитить.
 130. Mac App distribution.
 132. Рома - кабели.
 136. Прогу для считывателя.
-148. Заценить новые квесты в ДГ2 у 
 157. Паша - процессор томозит, фотошоп не работает. Новый комп?
 158. Еве активировать форточки и разобраться с бутом.
-160. Смартобъекты, фильтры слоёв. Художники жалуются. Сравнить их машины, взять Ксюшину, проверить.
 164. Китайский акк а айтюнс.
-166. Монитор забрать.
-171. Шерлок.
-173. номер версии в гугле закрытый порнографическим контентом
-179. 
+181. Стать ОЕМ.
+182. Заменить скрины в танках.
+189. Запросить у юлука видео с документом от юриста.
+190. Отправить юлуку видео сохранённое.
+194. Установить в переговорку и к Антону замки с закрытием снаружи.
+204. Купить 3 симки для тестирования - мегафон, билайн и мтс.
+206. Купить нокию 630.
+207. Отдать Даиру спецификацию на комп.
+208. Купить память.
+209. Установить Толе ещё хуйни.
+211. 
 
 Perspective:
 7. Гит в свн для Дениса.
@@ -680,7 +712,6 @@ Perspective:
 45. UPS на сервер.
 46. SSD Саше Анисимову.
 59. Бекапы, саппорт.
-60. Проверить american-ip.
 64. Сделать схему локальной сети.
 88. Учить Linux admin.
 91. Учить Строение сетей.
@@ -715,6 +746,7 @@ Apple ID: albar@joybits.org Polozfallout1
 test1@joybits.org Aa123456
 appledev.at Underpoloz1
 git: polozfallout
+github: underpoloz@gmail.com / polozfallout1
 skype: polozfallout1
 lee.foui.lonn@gmail.com leefouilonn Leefouilonn1
 	What was the name of your best friend as a teenager? Cho Kzao
@@ -726,6 +758,28 @@ lee.foui.lonn@gmail.com leefouilonn Leefouilonn1
 	Minhang	201100 Shanghai
 		6227000750663910
 			+86187-6692-3799
+
+JoyBits General 01: joybits 2016	
+
+Xbox One:
+https://xdp.xboxlive.com/
+aidar.kutluguzhin@joybits.org
+Twilight
+Видяхи.
+https://developer.xboxlive.com/en-us/platform/development/documentation/Pages/Ingestion_Workbooks.aspx
+https://xdp.xboxlive.com/marketplace/availabilitypreview
+
+
+Xbox Live:
+https://tools.xboxlive.com/product/Pages/Default.aspx
+Aidar.Kutluguzhin@joybits.org
+Twilight
+
+jb1 - 5102fiwi-pass
+jb2 - 5102fiwi-pass42
+jb3 - newworld2
+joybits general - joybits 2016
+		
 
 
 1. Перечень наших игр на разных платформах.
@@ -742,63 +796,198 @@ lee.foui.lonn@gmail.com leefouilonn Leefouilonn1
 
 8 канал.
 
-ЗВ не могут считаться "теми самыми", если кто-то не оказывется чьим-то сыном, или не взрывают звезду смерти. А тут прям джекпот.
+wget -qO - https://deb.packager.io/key | sudo apt-key add -
+echo "deb https://deb.packager.io/gh/finnlabs/pkgr-openproject-community trusty stable/4.2" | sudo tee /etc/apt/sources.list.d/pkgr-openproject-community.list
+sudo apt-get update
+sudo apt-get install openproject-ce
 
-7 красных линий, все строго перпендикулярны. Некоторые - зелёными чернилами, некоторые - прозрачными. Одна линия должна быть в форме котёнка.
 
-1) «Маленький принц» (Le Petit Prince), Антуан де Сент-Экзюпери (1943)
-2) «Приключения Чиполино» (Il Romanzo di Cipollino), Джанни Родари (1956)
-3) «Роза и кольцо», (The Rose and the Ring), Уильям Мейкпис Теккерей (1854)
-4) «Маленькая книжная комната» (The Little Bookroom), Элеонора Фарджон (1955)
-5) «Три мушкетера» (Les trois mousquetaires), Александр Дюма (1844)
-6) «Таинственный сад» (The Secret Garden), Франсис Элиза Бернетт (1909)
-7) «Сага о Нибелунгах», (Die Nibelungensage), Густав Шалк (1891)
-8) «Алиса в стране чудес» (Alice’s Adventures in Wonderland), Льюис Кэрролл (1865)
-9) «Приключения Шерлока Холмса» (The Adventures of Sherlock Holmes), Артур Конан Дойл (1891)
-10) «Норвежская ферма» (A Norwegian Farm), Мария Гамсун (1933)
-11) «Конек-горбунок», Петр Ершов (1834)
-12) «Жизнь насекомых. Рассказы энтомолога», Жан-Анри Фабр (1879-1907)
-13) Toui Mukashi no Fushigina Hanashi-Nihon Reiiki, Цутому Минаками (1995)
-14) «Рассказы и сказки», Лев Толстой (1886)
-15) «Орел девятого легиона» (Eagle of the Ninth), Розмари Сатклиф (1954)
-16) «Винни-пух» (Winnie-the-Pooh), Алан Милн, (1926)
-17) «Принцы ветра», (Les Princes du Vent ), Мишель-Эме Боду (1956)
-18) «When Marnie Was There», Joan G Robinson (1967)
-19) «Бесконечная зима» (The Long Winter), Лора Инглз Уайлдер (1940)
-20) «Ветер в ивах» (The wind in the Willows), Кеннет Грэм, (1908)
-21) «Летающий корабль» (The Ship That Flew), Хильда Льюис, (1939)
-22) «Flambard», Kathleen Wendy Peyton (1967)
-23) «Том и полночный сад» (Tom’s Midnight Garden), Филипп Пирс (1958)
-24) «Приключения Тома Сойера» (The Adventures of Tom Sawyer), Марк Твен (1876)
-25) «Ресторан многих заказов» (Chumon no Ooi Ryouriten), Кэндзи Миядзава (1924)
-26) «Хайди» (Heidi), Йоханна Спири (1888)
-27) «20 тысяч лье под водой» (20000 lieues sous les mers), Жюль Верн (1870)
-28) «Добывайки» (The Borrowers), Мэри Нортон (1952)
-29) «Девять сказок» (Devatero pohadek), Карел Чапек (1931)
-30) «Ласточки и амазонки» (Swallows and Amazons), Артур Рэнсом (1930)
-31) «Летающий класс» (Das fliegende Klassenzimmer), Эрих Кестнер (1933)
-32) «Робинзон Крузо» (Robinson Crusoe), Даниэль Дефо (1719)
-33) «Остров сокровищ» (Treasure Island), Роберт Льюис Стивенсон (1883)
-34) «Двенадцать месяцев», Самуил Маршак (1943)
-35) «Тисту — мальчик с зелеными пальцами» (Tistou les pouces verts), Морис Дрюон (1957)
-36) «The man who planted the welsh onions», Kim Soun (1953)
-37) «Странные истории» (Strange Stories from a Chinese Studio), Пу Сунлин (1740)
-38) «Путешествие доктора Дулитла» (The Voyages of Doctor Dolittle), Хью Лофтинг (1922)
-39) «Путешествие на Запад» (Journey to the West), У Чэнъэн (1590)
-40) «Маленький лорд Фаунтлерой» (Little Lord Fauntleroy), Фрэнсис Ходгсон Бёрнетт, (1886)
-41) «Из архива миссис Базиль Э. Франквайлер, самого запутанного в мире» (From the Mixed-Up Files of Mrs. Basil E. Frankweiler), Элейн Лобл Конигсбург, (1968)
-42) «Все мы — дети из Бюллербю» (Alla vi barn i Bullerbyn), Астрид Линдгрен (1947)
-43) «Хоббит или туда и обратно» (The Hobbit or There and Back Again), Джон Рональд Руэл Толкиен (1937)
-44) «Волшебник Земноморья» (A Wizard of Earthsea), Урсула Крёбер Ле Гуин (1968)
-45) «Маленькая белая лошадка» (The Little White Horse), Элизабет Гоудж (1946)
-46) «Нас было пятеро», (Bylo nas pet) Карел Полачек, (1969)
-47) «City Neighbor: The Story of Jane Addams», Clara Ingram Judson (1951)
-48) «The Radium Woman», Eleanor Doorly (1939)
-49) «Происшествие в Оттербери» (The Otterbury Incident), Сесил Дэй-Льюис (1948)
-50) «Серебрянные коньки» (Hans Brinker or The Silver Skates), Мэри Додж (1865)
 
-192.168.100.42
-pserver
-root 5
-poloz 5
+-Включить Canonical Partners в списке источников. Settings-Software%Updates.
+- 
 
+Doodle God: Ultimate Edition
+
+В прошлых версиях в интерфейсе были галки Flip X и Flip Y. В этой версии этих галок нет, и использование коэффициентов даёт странный результат. Скажите, пожалуйста, как флипать изображение в этой версии?
+
+There was Flip X and Flip Y checkboxes in the past Spine vesions, but now they are gone. So we are flipping animations by setting "scale X" to -1. But in the game (spine-c runtime) all figures with "scale X" set to -1 appeared upside-down, like somehow their "rotate" sets to 180. Could you please help with this issues?
+
+{ "JoyBitsLtd.DoodleGod8-bitManiaBlitz", Device::VersionTypeBlitz, "ms-windows-store:PDP?PFN=JoyBitsLtd.DoodleGod8-bitManiaBlitz_2687mb06qk6xe" },
+
+More mana gaining abilities!
+Больше способов получить ману!
+
+-NEW Content!
+-NEW Valentines Day Puzzles!
+-Can you Save the Day?
+
+-Новый уникальный паззл ко Дню Святого Валентина.
+-Спаси день всех влюбленных!
+
+
+Please provide your purchase receipt, we'll refund.
+
+
+
+
+
+Добавил возможность добавлять ману.
+
+Нужно отправить запрос вида:
+http://jbstatfrontend.azurewebsites.net/admin/balance/increment.php?udid=USER_UDID&game_id=GAME_ID&game_type=GAME_TYPE&platform=PLATFORM&balance=10
+http://jbstatfrontend.azurewebsites.net/admin/balance/increment.php?udid=aef4ee3ec3218f593735d5614cc1ba29&game_id=doodlegod&game_type=blitz&platform=ANDROID_PHONE&balance=2500
+
+где 
+udid - udid юзера
+game_id - id игры (напр. DoodleGod)
+game_type - тип игры (напр. PAID, BLITZ, FREE)
+platform - платформа игры (напр. IPHONE, IPAD, ANDROID_PHONE, ANDROID_TABLET)
+balance - на сколько увеличить баланс маны игрока
+
+В ответе вернется строка вида:
+«OK New balance: 30»
+
+Проверить текущий баланс юзера можно по ссылке вида:
+http://jbstatfrontend.azurewebsites.net/admin/balance/get.php?udid=USER_UDID&game_id=doodlegod&game_type=paid&platform=IPHONE
+http://jbstatfrontend.azurewebsites.net/admin/balance/get.php?udid=aef4ee3ec3218f593735d5614cc1ba29&game_id=doodlegod&game_type=blitz&platform=ANDROID_PHONE
+
+
+a <- 1, b <- 1001
+-- искомое число secret в интервале [a,b), то есть (1) больше или равно a; (2) меньше b.
+while (a < b) do   
+	m = (a + b) div 2; -- целая часть от полусуммы a и b (округление полуцелого вниз)   
+	if (secret > m) then      
+		a <- m   
+	else      
+		b <- m   
+	fi
+od   
+print (a)
+
+
+1. Реквизиты передающей стороны.
+2. кому направляется видеоматериал.
+3. Текст, где указано "Натоящим направляем в ваш адрес видеоархив за такие-то числа в таком-то объёме."
+4. Указать приложение - какой носитель, серийный номер носителя.
+5. Если можно - перечень, объём и контрольная сумма кажого файла. Опционально.
+6. Подпись должностного лица, осуществляющего передачу.
+7. Печать, если она предусмотрнеа уставом.
+
+Близко расположенные балконы - гостиница или пансионат. Куча спутниковых антенн - в уединении, может, посреди парка или на горе в стороне от города. Южный фасад дома. Нет кондиционеров - климат умеренный. Маркизы и водосточные трубы - не Россия.
+
+
+http://jbstatfrontend.azurewebsites.net/admin/balance/get.php?udid=80f237f6c4a153b58ac7834a94770f88&game_id=DoodleCreatures&game_type=paid&platform=ANDROID_PHONE
+
+http://jbstatfrontend.azurewebsites.net/admin/balance/increment.php?udid=80f237f6c4a153b58ac7834a94770f88&game_id=DoodleCreatures&game_type=PAID&platform=ANDROID_PHONE&balance=700
+
+"Штрафы" вырастут... 
+
+Александр Леньков, Тамара Горелик, Наталия Литвинова, Руслан Суров, Майя Полянская, Оксана Гирина, Анна Вартанова
+
+
+ATLVersionCheck ATLVulnCheck AppContainerCheck CompilerVersionCheck DBCheck DefaultGSCookieCheck ExecutableImportsCheck FunctionPointersCheck GSCheck GSFriendlyInitCheck GSFunctionSafeBuffersCheck HighEntropyVACheck NXCheck RSA32Check SafeSEHCheck SharedSectionCheck VB6Check WXCheck
+
+We've got our tournaments, so if this considered "multiplayer"?
+
+Failed to save content configuration for regions. Regions are sharing package with China.
+
+
+
+Everything's ok, except this:
+
+2.      There are no ratings certificates provided. Please ensure that these are provided at final cert.
+
+
+We had used ESRB and PEGI online self-submission tools to get certificates before both ratings was replaced by IARC system.
+ESRB and PEGI were maintaining their online tools which were providing pdf files of issued certificates for us.
+IARC ratings completely replaced ESRB and PEGI since January 2016 and currently we are submitting games to Microsoft without ESRB or PEGI files but via unified IARC rating process. PEGI withdrew their online certification tool, so no PEGI certificate was issued for Xbox One version of Doodle God: Ultimate Edition due to certification tool's inaccessibility.
+May I ask you to ask Microsoft whether we need these certificates at all and, if we do, acquire those as we cannot get those online at the moment.
+
+So could you please acquire PEGI certification details from Microsoft and, maybe this certificate we do not need at all.
+I managed to get ESRB certificate for Doodle God for Xbox 360, but I doubt its validity for Xbox One. 
+PEGI online certification is unavaliable now, so we do not have one. In result we cannot provide certificate files
+So ESRB automated rating tool ()
+
+
+I have written a post below BUT I am thinking that we may want to wait to do this post until AFTER the Xbox ONe release.... 
+Unlike with our PS releases we have a great chance to be featured multiple times on Xbox ONe. 
+I think if we do this post on FB we have a chance that MSFT may see this post and thus NOT be as excited for our Xbox ONe release. 
+
+I was going to make a big deal to MSFT about DG being our first CONSOLE release for PS or XBox.. (PS vita hand held does not count).
+
+I very much think we should hold off on this post until after we launch the Xbox ONe version... This post will not have any real positive effect on the sales of the PS 3/4 BUT could very well hurt our Xbox One launch featuring chances. 
+
+We should wait until the Xbox One version is live.
+
+Please find the details below:
+
+
+Hey Doodlers & PlayStation4 players... 
+We have some great news to share about the first ever version of Doodle God & Doodle Devil available for the PlayStation3 & Playstation4.
+
+Enjoy the worlds greatest puzzle and world building game on our TV!
+Check out the links here...
+
+Doodle God for PlayStation 3: https://store.playstation.com/#!/en-gb/games/doodle-god/cid=EP4384-NPEB01233_00-DOODLEGODPS3000E
+Doodle God for PlayStation 4: https://store.playstation.com/#!/en-gb/games/doodle-god/cid=EP4384-CUSA02776_00-DOODLEGODPS4000E
+
+Being Bad Has Never Been So Much Fun!
+
+Doodle Devil is back and better than ever! Its time to enjoy being bad in your living room.
+
+Check out Doodle Devil for your PS3 or PS4
+Available now!
+
+Doodle Devil for PlayStation 3: https://store.playstation.com/#!/en-gb/games/doodle-devil/cid=EP4384-NPEB02315_00-DOODLEDEVILPS30E
+Doodle Devil for PlayStation 4: https://store.playstation.com/#!/en-gb/games/doodle-devil/cid=EP4384-CUSA02775_00-DOODLEDEVILPS40E
+
+Happy Doodling!
+
+пропранолол анаприлин обзидан beloc-zok metoprolol esmorol
+
+starterkit, bonuspack, 1000 mana, 3000 mana, 10000 mana, 30000 mana and unlimited mana
+
+
+Main Game: Beginning
+Main Game: Technology
+Main Game: Modern Age
+Main Game: Word of Magic
+Menu
+Puzzles
+Quests
+Tournament
+Puzzles Solved
+Elements Unlocked
+Artifacts Created
+Quests Completed
+Doodle God Planet progress
+
+на
+немецкий
+испанский
+французский
+итальянский
+японский
+корейский
+голландский
+польский
+португальский
+шведский
+китайский
+
+
+Слово "пиздецина" гораздо более всеобъемлюще, чем просто курс лечения. Это целая наука, а кое-где и даже и искусство. В подворотне какой-то плюгавый очкаришка неуважительно отказал вам в вежливой просьбе поделится телефоном и наличностью? Показан пропиздол, ебаловъебин и завершающий курс берцово-кирзового массажа почек.
+На дискотеке незакомый вам и вашим друзьям молодой человек танцует с местными дамами в стиле, совершенно неприемлемом в данное время года? Конечно же, нужно применять тыбляподошёл и прогулки на свежем воздухе. При обострении рекомендуется операционное вмешательство поленом или групповая терапия. Как видите, область применения пиздецины широка, но малоизучена. Ждут своего исслое такие методики как 
+
+
+Да где там... В наше неспокойное время высока вероятность встретить бродячего торговца пиздецинскими средствами. Главное здесь - вовремя отличить предлагаемые свежие, ядрёные, качественные препараты и принять соответсвующие меры. Говорят, что супер-пиздобол может помочь в такой ситуации, но, честно говоря, верится слабо. На такой случай невредно носить с собой настойку турбосъебина на скипидарном масле. Этот чудесный профилактический состав смягчает пиздецинские последствия, а в ряде случаев даже поможет их избежать.
+
+
+предлагающие некачественные препараты, применение которых опасно для самого специалиста. Например, не вовремя применённый 
+
+Вот фирма которая пишет дудлгод.
+Вот барсик который весьма недоволен в фирме которая пишет дудлгод.
+Вот телефон который приналдежит.
+Вот Ева которая пишет.
+Вот навигатор который работает на телефоне.
+А вот Олег который.

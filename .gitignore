@@ -19,3 +19,6 @@
 *.suo
 *.tlog
 *.user
+*.iobj
+*.ipdb
+*.db

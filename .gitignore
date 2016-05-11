@@ -3,3 +3,12 @@
 *.dwl
 *.dwl2
 /prj/vs2012
+*.log
+*.obj
+*.tlog
+*.exe
+*.iobj
+*.*db
+*.*pch
+*.ilk
+*.suo

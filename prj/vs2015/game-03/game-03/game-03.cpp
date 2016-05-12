@@ -39,14 +39,17 @@ int draw_sector(int energy, int warheads, float fuel, float oxygen, int sector[1
 			case 4:
 				cout << " B ";
 				break;
+			case 5:
+				cout << " w ";
+				break;
 			default:
-				cout << "   ";
+				cout << " . ";
 				break;
 			}
 		}
 		cout << "|";
 		if (mode == 0) {
-			if (i == 3) { cout << "  Avalible commands:"; }
+			if (i == 3) { cout << "  Available commands:"; }
 			if (i == 4) { cout << "          a - attack"; }
 			if (i == 5) { cout << "          m - move"; }
 			if (i == 6) { cout << "          q - quit"; }
@@ -63,11 +66,52 @@ int draw_sector(int energy, int warheads, float fuel, float oxygen, int sector[1
 			if (i == 5) { cout << "             270  S  90"; }
 			if (i == 7) { cout << "             225 180 135"; }
 		}
+		if (mode == 3) {
+			if (i == 3) { cout << "  Available commands:"; }
+			if (i == 4) { cout << "          a - attack"; }
+			if (i == 5) { cout << "          m - move"; }
+			if (i == 6) { cout << "          d - dock"; }
+			if (i == 7) { cout << "          q - quit"; }
+		}
 		cout << endl;
 	}
 	cout << "-----------------------------------" << endl;
-	cout << endl << endl << prompt;
+	cout << prompt;
 
+	return 0;
+}
+
+int intro() {
+	char ch;
+
+	system("CLS");
+	cout << "-----------------------------------------------------\n";
+	cout << "              Old Console Trekkie Game\n\n";
+	cout << "            (Not like Xbox or PS console)\n";
+	cout << "\n";
+	cout << "                     Remake\n";
+	cout << "                       v.1\n";
+	cout << "\nFYI some radar readings:\n\n";
+	cout << " * - star. Hot ball of hot gases.\n";
+	cout << " k - slimy klingon. Seven-assed enemy.\n";
+	cout << " S - our ship. She's real beauty, ain't she, capt'n?\n";
+	cout << " B - sector base. Supplies!\n";
+	cout << " w - dangerous warhead.\n";
+	cout << " . - vast black space. No air, just starsine.\n";
+	cout << "-----------------------------------------------------\n";
+	cout << "\n";
+	cout << "\n";
+	system("pause");
+	return 0;
+}
+
+int endgame(int clingons) {
+	system("CLS");
+	cout << "------------------------\n";
+	cout << "-Clingons rest: " << clingons << endl;
+	cout << "-Goodbye, capt'n!\n";
+	cout << "------------------------\n\n\n";
+	system("pause");
 	return 0;
 }
 
@@ -85,6 +129,7 @@ int main()
 	// 2 - clingon
 	// 3 - our ship
 	// 4 - base
+	// 5 - warhead
 	int sector[10][10] = { 0 };
 	int j = 0;
 	int k = 0;
@@ -93,7 +138,7 @@ int main()
 	// m - move
 	// q - quit
 	char input = 'z';
-	string prompt = "Your orders, capt'n? ";
+	string prompt = "\n\n-Your orders, capt'n?\n-";
 	int ship_x = 0;
 	int ship_y = 0;
 	int ship_dest_x = 0;
@@ -102,17 +147,22 @@ int main()
 	// 0 - avaliable commands
 	// 1 - moving direction
 	// 2 - attack routine
+	// 3 - docking
 	int prompt_mode = 0;
 	int warhead_course = 0;
 	double warhead_x = 0;
 	double warhead_y = 0;
 	double delta = 0.001;
-	double warhead_radius = 0;
+	double warhead_radius = 1;
 	int target = 0;
+	bool docking = false;
+	int warhead_old_x = 0;
+	int warhead_old_y = 0;
 
 
 	// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
 	srand(time(NULL));
+	// stars
 	for (int i = 1; i <= (rand() % 5 + 6); i++) { 
 		do { 
 			j = rand() % 10; 
@@ -120,7 +170,7 @@ int main()
 		} while (sector[j][k] != 0); 
 		sector[j][k] = 1; 
 	}
-	//                             3   1
+	// clingons
 	for (int i = 1; i <= (rand() % 3 + 1); i++) {
 		do {
 			j = rand() % 10;
@@ -144,50 +194,91 @@ int main()
 		sector[j][k] = 4;
 	}
 
+	intro();
+
 	do 
 	{
 		switch (input) {
 		case 'q': // Quit
+			endgame(clingons);
 			return 0;
 			break;
 		case 'a': // Attack
 			prompt_mode = 2;
-			prompt = "Warhead course? ";
+			if (warheads == 0) {
+				prompt = "\n\n-We are short on warheads, need resupply!\n-What should we do?\n-";
+				break;
+			}
+			prompt = "\n\n-Warhead course?\n-";
 			draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
-			cin >> warhead_course;			
+
+			if (cin >> warhead_course )
+			{
+				// It worked (input is now in a good state)
+							
 			warheads--;
-			warhead_course = 90 - warhead_course;
+			warhead_course = 180 - warhead_course;
 			if (warhead_course < 0) { warhead_course += 360; }
+			warhead_old_x = ship_x;
+			warhead_old_y = ship_y;
 			do {
 				warhead_radius += delta;
 				warhead_x = cos(warhead_course * PI / 180) * warhead_radius;
 				warhead_y = sin(warhead_course * PI / 180) * warhead_radius;
 				target = sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)];
+				if ( target == 0 && 
+					( 
+					(ship_x + (int)round(warhead_x) != warhead_old_x ) || (ship_y + (int)round(warhead_y) != warhead_old_y )
+						)
+					) {
+					sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)] = 5;
+					draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
+					_sleep(500);
+					sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)] = 0;
+					warhead_old_x = ship_x + (int)round(warhead_x);
+					warhead_old_y = ship_y + (int)round(warhead_y);
+				}				
 				if ((target != 0) && (target != 3)) { 
 					if (target != 1) {
 						sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)] = 0;
 					}
 					break; }
 			} while ((abs(warhead_x) <= 10.0) && (abs(warhead_y) <= 10.0));			
-			warhead_radius = 0;
+			warhead_radius = 1;
 			switch (target) {
 			case 1:
-				prompt = "Warhead wanished in the star's flames! ";
+				prompt = "\n\n-Warhead wanished in the star's flames!\n-Orders?\n-";
 				break;
 			case 2:
-				prompt = "Clingon killed! ";
+				prompt = "\n\n-Clingon killed!\n-What should we do now?\n-";
 				clingons--;
 				break;
 			case 4:
-				prompt = "Base destroyed! ";
+				prompt = "\n\n-Base destroyed!\n-What's next?\n-";
 				break;
 			default:
-				prompt = "Something destroyed! ";
+				prompt = "\n\n-Lost warhead telemetry!\n-We all doomed!\n-";
 				break;
 			}
+
+			}
+			else
+			{
+				// input is in a bad state.
+				// So first clear the state.
+				cin.clear();
+
+				// Now you must get rid of the bad input.
+				// Personally I would just ignore the rest of the line
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+				// now that you have reset the stream you can go back and try and read again.
+				prompt = "\n\n-Wrong bearing, sir!\n-Your command, sir?\n-";
+			}
+
 			break;
 		case 'm': // Move
-			prompt = "Heading, capt'n? ";
+			prompt = "\n\n-Heading, capt'n?\n-";
 			prompt_mode = 1;
 			draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
 			cin >> input;
@@ -226,27 +317,28 @@ int main()
 				ship_dest_y = ship_y-1;
 				break;
 			default:
-				prompt = "Can't carry the order, sir! ";
+				prompt = "\n\n-Can't carry the order, sir!\n-Your command, sir?\n-";
 				break;
 			}
 			if ((input >= '1') && (input <= '8')) {
 				if ((ship_dest_x < 0) || (ship_dest_y < 0) || (ship_dest_x > 9) || (ship_dest_y > 9)) {
-					prompt = "Out of range, sir! ";					
+					prompt = "\n\n-Out of range, sir!\n-Orders?\n-";					
 				}
 				else
 					if (sector[ship_dest_x][ship_dest_y] != 0) {						
 						switch (sector[ship_dest_x][ship_dest_y]) {
 						case 1:
-							prompt = "Star ahead! ";
+							prompt = "\n\n-Star ahead!\n-Orders, sir?\n-";
 							break;
 						case 2:
-							prompt = "Clingon ahead! ";
+							prompt = "\n\n-Clingon ahead!\n-Attacking, sir?\n-";
 							break;
 						case 4:
-							prompt = "Base ahead! ";
+							prompt = "\n\n-Base ahead!\n-We can dock, sir?\n-";
+							docking = true;
 							break;
 						default:
-							prompt = "Something ahead! ";
+							prompt = "\n\n-Something ahead!\n-What will be the orders, sir?\n-";
 							break;
 						}
 					}
@@ -255,21 +347,34 @@ int main()
 						sector[ship_dest_x][ship_dest_y] = 3;
 						ship_x = ship_dest_x;
 						ship_y = ship_dest_y;
-						prompt = "Maneuver commenced! ";
-						fuel -= 0.1;
-						oxygen -= 0.3;
-						energy -= 100;
+						prompt = "\n\n-Maneuver commenced!\n-Orders, sir?\n-";
+						if (fuel >= 0.1) { fuel -= 0.1; } else { fuel = 0; }
+						if (oxygen >= 0.3) { oxygen -= 0.3; } else { oxygen = 0; }
+						if (energy >= 100) { energy -= 100; } else { energy = 0; }
 					}
 			}
 			break;
+		case 'd':
+			if (docking == false) { 
+				prompt = "\n\n-Your orders, capt'n?\n-";
+				break; }
+			warheads = 15;
+			fuel = 100;
+			if (oxygen < 5000) { oxygen = 5000; }
+			if (energy < 8300) { energy = 8300; }
+			docking = false;
+			prompt = "\n\n-Got fresh ones!!\n-New orders, sir?\n-";
+			break;
 		default:
+			prompt = "\n\n-Your orders, capt'n?\n-";
 			break;
 		}
 		prompt_mode = 0;
+		if (docking == true) { prompt_mode = 3; }
 		draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
-		oxygen-= 0.9;
-		fuel -= 0.01;
-		energy += 250;		
+		if (oxygen >= 0.9) { oxygen -= 0.9; } else { oxygen = 0; }
+		if (fuel >= 0.01) { fuel -= 0.01; }	else { fuel = 0; }
+		if (energy <= 19750) { energy += 250; } else { energy = 20000; }
 	} while (cin >> input);
 	return 0;
 }

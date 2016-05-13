@@ -13,6 +13,7 @@ using namespace std;
 #define PI 3.14159265
 
  /*
+
 int * init_sector(int sector[][]) {
 
 		// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
@@ -53,6 +54,7 @@ int * init_sector(int sector[][]) {
 
 	return sector;
 }
+
 */
 
 int draw_statusbar(int energy, int warheads, float fuel, float oxygen) {
@@ -259,7 +261,6 @@ int main()
 		} while (sector[j][k] != 0);
 		sector[j][k] = 4;
 	}
-
 
 	intro();
 

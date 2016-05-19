@@ -12,14 +12,20 @@ using namespace std;
 
 #define PI 3.14159265
 
- /*
+int clingons = 0;
+int ship_x = 0;
+int ship_y = 0;
+int sector[10][10] = { 0 };
+int galaxy[12][12] = { 0 };
 
-int * init_sector(int sector[][]) {
+int init_sector(int stars_min, int stars_max, int clingons_min, int clingon_max, bool base) {
 
-		// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
+	int j;
+	int k;
+
 	srand(time(NULL));
 	// stars
-	for (int i = 1; i <= (rand() % 5 + 6); i++) { 
+	for (int i = 1; i <= (rand() % (stars_max - stars_min) + stars_min); i++) {
 		do { 
 			j = rand() % 10; 
 			k = rand() % 10; 
@@ -27,7 +33,7 @@ int * init_sector(int sector[][]) {
 		sector[j][k] = 1; 
 	}
 	// clingons
-	for (int i = 1; i <= (rand() % 3 + 1); i++) {
+	for (int i = 1; i <= (rand() % (clingon_max - clingons_min) + clingons_min); i++) {
 		do {
 			j = rand() % 10;
 			k = rand() % 10;
@@ -42,20 +48,16 @@ int * init_sector(int sector[][]) {
 	} while (sector[ship_x][ship_y] != 0);
 	sector[ship_x][ship_y] = 3;
 	// 0-1 base
-	if ((rand() % 2) == 1) {
+	if (base == true) {
 		do {
 			j = rand() % 10;
 			k = rand() % 10;
 		} while (sector[j][k] != 0);
 		sector[j][k] = 4;
 	}
-
-
-
-	return sector;
+		
+	return 0;
 }
-
-*/
 
 int draw_statusbar(int energy, int warheads, float fuel, float oxygen) {
 	system("CLS");
@@ -66,8 +68,30 @@ int draw_statusbar(int energy, int warheads, float fuel, float oxygen) {
 	return 0;
 }
 
-int draw_galaxy(int energy, int warheads, float fuel, float oxygen, int galaxy[12][12]) {
+int draw_galaxy(int energy, int warheads, float fuel, float oxygen, int galaxy[12][12], string prompt) {
 	draw_statusbar(energy, warheads, fuel, oxygen);
+	cout << endl << "Known galaxy map:" << endl <<
+			"------------------------------------------" << endl;
+	cout << "|     0  1  2  3  4  5  6  7  8  9 10 11 |" << endl;
+	for (int i = 0; i <= 11; i++) {
+		cout << "|";
+		if (i < 10) { cout << " "; }
+		cout << " 0" << i;
+		for (int j = 0; j <= 11; j++) {
+			switch (galaxy[i][j]) {
+			case 1:
+				cout << " * ";
+				break;
+			default:
+				cout << " ? ";
+				break;
+			}
+		}
+		cout << "|" << endl;
+	}
+
+	cout << "------------------------------------------" << endl;
+	cout << prompt;
 	system("pause");
 	return 0;
 }
@@ -180,7 +204,7 @@ int endgame(int clingons, bool base_destroyer) {
 
 int main()
 {
-	int clingons = 0;
+	
 	int warheads = 15;
 	float fuel = 100;
 	float oxygen = 5000;
@@ -192,8 +216,7 @@ int main()
 	// 3 - our ship
 	// 4 - base
 	// 5 - warhead
-	int sector[10][10] = { 0 };
-	int galaxy[12][12] = { 0 };
+
 	int j = 0;
 	int k = 0;
 	// command menu
@@ -204,8 +227,7 @@ int main()
 	// q - quit
 	char input = 'z';
 	string prompt = "\n\n-Your orders, capt'n?\n-";
-	int ship_x = 0;
-	int ship_y = 0;
+
 	int ship_dest_x = 0;
 	int ship_dest_y = 0;
 	// Draw prompt_mode
@@ -226,42 +248,9 @@ int main()
 	bool base_destroyer = false;
 	bool quit = false;
 
-	//sector = init_sector(sector);
-
 	// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
-	srand(time(NULL));
-	// stars
-	for (int i = 1; i <= (rand() % 5 + 6); i++) {
-		do {
-			j = rand() % 10;
-			k = rand() % 10;
-		} while (sector[j][k] != 0);
-		sector[j][k] = 1;
-	}
-	// clingons
-	for (int i = 1; i <= (rand() % 3 + 1); i++) {
-		do {
-			j = rand() % 10;
-			k = rand() % 10;
-		} while (sector[j][k] != 0);
-		sector[j][k] = 2;
-		clingons++;
-	}
-	// Our ship
-	do {
-		ship_x = rand() % 10;
-		ship_y = rand() % 10;
-	} while (sector[ship_x][ship_y] != 0);
-	sector[ship_x][ship_y] = 3;
-	// 0-1 base
-	if ((rand() % 2) == 1) {
-		do {
-			j = rand() % 10;
-			k = rand() % 10;
-		} while (sector[j][k] != 0);
-		sector[j][k] = 4;
-	}
-
+	init_sector(6,11,1,4,true);
+		
 	intro();
 
 	do 
@@ -437,7 +426,7 @@ int main()
 			prompt = "\n\n-Got fresh ones!!\n-New orders, sir?\n-";
 			break;
 		case 'j':
-			draw_galaxy(energy, warheads, fuel, oxygen, galaxy);
+			draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
 			break;
 		default:
 			prompt = "\n\n-Your orders, capt'n?\n-";

@@ -7,15 +7,32 @@
 #include <iomanip>
 #include <string>
 #include <cmath>
+#include <vector>
 
-using namespace std;
+//using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
+using std::vector;
 
 #define PI 3.14159265
 
 int clingons = 0;
 int ship_x = 0;
 int ship_y = 0;
+// Local sector objects. 
+// 0 - space
+// 1 - star
+// 2 - clingon
+// 3 - our ship
+// 4 - base
+// 5 - warhead
 int sector[10][10] = { 0 };
+// Global galaxy map
+// already visited
+// klingons
+// base
 int galaxy[12][12] = { 0 };
 
 int init_sector(int stars_min, int stars_max, int clingons_min, int clingon_max, bool base) {
@@ -63,8 +80,8 @@ int draw_statusbar(int energy, int warheads, float fuel, float oxygen) {
 	system("CLS");
 	cout << "Energy: " << energy <<
 		"    Warheads storage: " << warheads <<
-		"    Fuel level: " << setprecision(4) << fuel << "%" <<
-		"    Oxygen: " << setprecision(5) << oxygen << "t" << endl;
+		"    Fuel level: " << std::setprecision(4) << fuel << "%" <<
+		"    Oxygen: " << std::setprecision(5) << oxygen << "t" << endl;
 	return 0;
 }
 
@@ -92,7 +109,7 @@ int draw_galaxy(int energy, int warheads, float fuel, float oxygen, int galaxy[1
 
 	cout << "------------------------------------------" << endl;
 	cout << prompt;
-	system("pause");
+	//system("pause");
 	return 0;
 }
 
@@ -173,14 +190,15 @@ int intro() {
 	cout << "                     Remake\n";
 	cout << "                      v.01\n";
 	cout << "\nFYI some radar readings:\n\n";
-	cout << " * - star. Hot ball of hot gases.\n";
+	cout << " * - star. Hot ball of hot gases. Quite hot, fyi.\n";
 	cout << " k - slimy klingon. Seven-assed enemy.\n";
 	cout << " S - our ship. She's real beauty, ain't she, capt'n?\n";
 	cout << " B - sector base. Supplies!\n";
 	cout << " w - dangerous warhead.\n";
 	cout << " . - vast black space. No air, just starsine.\n";
 	cout << "\nYou can wander around, launch warhead occasionaly\n";
-	cout << "and quit whenever you like. Shiny!\n";
+	cout << "and quit whenever you like. Shiny! Also jumping\n";
+	cout << "between galaxy sectors is not prohibited. Yet.\n";
 	cout << "-----------------------------------------------------\n";
 	cout << "\n";
 	cout << "\n";
@@ -209,14 +227,6 @@ int main()
 	float fuel = 100;
 	float oxygen = 5000;
 	int energy = 8300;
-	// Local sector objects. 
-	// 0 - space
-	// 1 - star
-	// 2 - clingon
-	// 3 - our ship
-	// 4 - base
-	// 5 - warhead
-
 	int j = 0;
 	int k = 0;
 	// command menu
@@ -227,7 +237,6 @@ int main()
 	// q - quit
 	char input = 'z';
 	string prompt = "\n\n-Your orders, capt'n?\n-";
-
 	int ship_dest_x = 0;
 	int ship_dest_y = 0;
 	// Draw prompt_mode
@@ -239,7 +248,7 @@ int main()
 	int warhead_course = 0;
 	double warhead_x = 0;
 	double warhead_y = 0;
-	double delta = 0.001;
+	double delta = 0.01;
 	double warhead_radius = 1;
 	int target = 0;
 	bool docking = false;
@@ -248,10 +257,23 @@ int main()
 	bool base_destroyer = false;
 	bool quit = false;
 
+	// Prompts
+	// 0 - "\n\n-We are short on warheads, need resupply!\n-What should we do?\n-"
+	// 1 - "\n\n-Warhead course?\n-"
+	// 2 - "\n\n-Warhead wanished in the star's flames!\n-Orders?\n-"
+	vector<string> prompts;
+
+	int galaxy_x = 5;
+	int galaxy_y = 11;
+
 	// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
 	init_sector(6,11,1,4,true);
 		
 	intro();
+
+	prompts.push_back("\n\n-We are short on warheads, need resupply!\n-What should we do?\n-");
+	prompts.push_back("\n\n-Warhead course?\n-");
+	prompts.push_back("\n\n-Warhead wanished in the star's flames!\n-Orders?\n-");
 
 	do 
 	{
@@ -263,13 +285,13 @@ int main()
 		case 'a': // Attack
 			prompt_mode = 2;
 			if (warheads == 0) {
-				prompt = "\n\n-We are short on warheads, need resupply!\n-What should we do?\n-";
+				prompt = prompts[0];
 				break;
 			}
-			prompt = "\n\n-Warhead course?\n-";
+			prompt = prompts[1];
 			draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
 
-			if (cin >> warhead_course )
+			if (std::cin >> warhead_course )
 			{
 				// It worked (input is now in a good state)
 							
@@ -278,14 +300,22 @@ int main()
 			if (warhead_course < 0) { warhead_course += 360; }
 			warhead_old_x = ship_x;
 			warhead_old_y = ship_y;
+			warhead_radius = 1;
 			do {
 				warhead_radius += delta;
 				warhead_x = cos(warhead_course * PI / 180) * warhead_radius;
 				warhead_y = sin(warhead_course * PI / 180) * warhead_radius;
-				target = sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)];
+				if ((ship_x + (int)round(warhead_x)) >= 0 && 
+					(ship_y + (int)round(warhead_y)) >= 0 && 
+					(ship_x + (int)round(warhead_x)) <= 9 && 
+					(ship_y + (int)round(warhead_y)) <= 9) {
+					target = sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)];
+				}
+				else { break; }
 				if ( target == 0 && 
 					( 
-					(ship_x + (int)round(warhead_x) != warhead_old_x ) || (ship_y + (int)round(warhead_y) != warhead_old_y )
+					(ship_x + (int)round(warhead_x) != warhead_old_x ) || 
+					(ship_y + (int)round(warhead_y) != warhead_old_y )
 						)
 					) {
 					sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)] = 5;
@@ -301,12 +331,12 @@ int main()
 					}
 					break; }
 			} while ((abs(warhead_x) <= 10.0) && (abs(warhead_y) <= 10.0));			
-			warhead_radius = 1;
+			
 			//warhead_old_x = ship_x;
 			//warhead_old_y = ship_y;
 			switch (target) {
 			case 1:
-				prompt = "\n\n-Warhead wanished in the star's flames!\n-Orders?\n-";
+				prompt = prompts[2];
 				break;
 			case 2:
 				prompt = "\n\n-Clingon killed!\n-What should we do now?\n-";
@@ -426,7 +456,11 @@ int main()
 			prompt = "\n\n-Got fresh ones!!\n-New orders, sir?\n-";
 			break;
 		case 'j':
+			prompt = "\n\n-Whats the move, cap?\n-";
 			draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
+			cin >> ship_dest_x >> ship_dest_y;
+			cout << "Moving to " << ship_dest_x << ":" << ship_dest_y << "... Success!" << endl;
+			system("pause");
 			break;
 		default:
 			prompt = "\n\n-Your orders, capt'n?\n-";

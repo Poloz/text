@@ -215,7 +215,7 @@ int main()
 	int warhead_course = 0;
 	double warhead_x = 0;
 	double warhead_y = 0;
-	double delta = 0.001;
+	double delta = 0.01;
 	double warhead_radius = 1;
 	int target = 0;
 	bool docking = false;
@@ -288,14 +288,22 @@ int main()
 			if (warhead_course < 0) { warhead_course += 360; }
 			warhead_old_x = ship_x;
 			warhead_old_y = ship_y;
+			warhead_radius = 1;
 			do {
 				warhead_radius += delta;
 				warhead_x = cos(warhead_course * PI / 180) * warhead_radius;
 				warhead_y = sin(warhead_course * PI / 180) * warhead_radius;
-				target = sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)];
+				if ((ship_x + (int)round(warhead_x)) >= 0 && 
+					(ship_y + (int)round(warhead_y)) >= 0 && 
+					(ship_x + (int)round(warhead_x)) <= 9 && 
+					(ship_y + (int)round(warhead_y)) <= 9) {
+					target = sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)];
+				}
+				else { break; }
 				if ( target == 0 && 
 					( 
-					(ship_x + (int)round(warhead_x) != warhead_old_x ) || (ship_y + (int)round(warhead_y) != warhead_old_y )
+					(ship_x + (int)round(warhead_x) != warhead_old_x ) || 
+					(ship_y + (int)round(warhead_y) != warhead_old_y )
 						)
 					) {
 					sector[ship_x + (int)round(warhead_x)][ship_y + (int)round(warhead_y)] = 5;
@@ -311,7 +319,7 @@ int main()
 					}
 					break; }
 			} while ((abs(warhead_x) <= 10.0) && (abs(warhead_y) <= 10.0));			
-			warhead_radius = 1;
+			
 			//warhead_old_x = ship_x;
 			//warhead_old_y = ship_y;
 			switch (target) {

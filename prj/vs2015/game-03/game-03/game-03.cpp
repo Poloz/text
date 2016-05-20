@@ -1,6 +1,18 @@
 // game-03.cpp : Defines the entry point for the console application.
 //
 
+// WIP Release1: Global galaxy map.
+// WIP Release2: Global goal. Make all stats (fuel, oxygen, energy) useful.
+// TODO feature: Clingon boarding mode. Ability to capture things and be attacked in return.
+// TODO feature: Remember each sector's stars and other objects.
+// TODO feature: Constellations. Unique star configurations per sector or adjacent sectors.
+// TODO feature: Planets, star names, stardust, asteroids, text quests, prompt personalization and randomization.
+// TODO feature: Flash, win8 store, win 10 universal, win mobile 10, DOS, linux, android, iOS, OS X versions.
+// TODO feature: Localizations.
+// TODO feature: Galaxy jump events (drive falure).
+// TODO feature: Ship's subsystems.
+// TODO rewrite: Modularize program (.h, several .cpp).
+
 #include "stdafx.h"
 #include <stdlib.h> 
 #include <iostream>
@@ -21,6 +33,7 @@ using std::vector;
 int clingons = 0;
 int ship_x = 0;
 int ship_y = 0;
+
 // Local sector objects. 
 // 0 - space
 // 1 - star
@@ -29,10 +42,12 @@ int ship_y = 0;
 // 4 - base
 // 5 - warhead
 int sector[10][10] = { 0 };
+
 // Global galaxy map
-// already visited
-// klingons
-// base
+// 1 - already visited
+// 2 - klingons
+// 4 - base
+// 3 - starship
 int galaxy[12][12] = { 0 };
 
 int init_sector(int stars_min, int stars_max, int clingons_min, int clingon_max, bool base) {
@@ -97,7 +112,13 @@ int draw_galaxy(int energy, int warheads, float fuel, float oxygen, int galaxy[1
 		for (int j = 0; j <= 11; j++) {
 			switch (galaxy[i][j]) {
 			case 1:
-				cout << " * ";
+				cout << " B ";
+				break;
+			case 2:
+				cout << "-S-";
+				break;
+			case 3:
+				cout << " . ";
 				break;
 			default:
 				cout << " ? ";
@@ -106,7 +127,6 @@ int draw_galaxy(int energy, int warheads, float fuel, float oxygen, int galaxy[1
 		}
 		cout << "|" << endl;
 	}
-
 	cout << "------------------------------------------" << endl;
 	cout << prompt;
 	//system("pause");
@@ -130,7 +150,7 @@ int draw_sector(int energy, int warheads, float fuel, float oxygen, int sector[1
 				cout << " k ";
 				break;
 			case 3:
-				cout << " S ";
+				cout << "-S-";
 				break;
 			case 4:
 				cout << " B ";
@@ -180,7 +200,7 @@ int draw_sector(int energy, int warheads, float fuel, float oxygen, int sector[1
 }
 
 int intro() {
-	char ch;
+	//char ch;
 
 	system("CLS");
 	cout << "-----------------------------------------------------\n";
@@ -263,12 +283,14 @@ int main()
 	// 2 - "\n\n-Warhead wanished in the star's flames!\n-Orders?\n-"
 	vector<string> prompts;
 
-	int galaxy_x = 5;
-	int galaxy_y = 11;
+	int galaxy_x = 11;
+	int galaxy_y = 6;
 
 	// randomize sector : 6-11 stars, 1-4 clingons, 1 ship, 0-1 base
 	init_sector(6,11,1,4,true);
 		
+	galaxy[galaxy_x][galaxy_y] = 2; // Ship in the right sector
+
 	intro();
 
 	prompts.push_back("\n\n-We are short on warheads, need resupply!\n-What should we do?\n-");
@@ -438,8 +460,8 @@ int main()
 						ship_x = ship_dest_x;
 						ship_y = ship_dest_y;
 						prompt = "\n\n-Maneuver commenced!\n-Orders, sir?\n-";
-						if (fuel >= 0.1) { fuel -= 0.1; } else { fuel = 0; }
-						if (oxygen >= 0.3) { oxygen -= 0.3; } else { oxygen = 0; }
+						if (fuel >= (float)0.1) { fuel -= (float)0.1; } else { fuel = 0; }
+						if (oxygen >= (float)0.3) { oxygen -= (float)0.3; } else { oxygen = 0; }
 						if (energy >= 100) { energy -= 100; } else { energy = 0; }
 					}
 			}
@@ -456,11 +478,40 @@ int main()
 			prompt = "\n\n-Got fresh ones!!\n-New orders, sir?\n-";
 			break;
 		case 'j':
+			
 			prompt = "\n\n-Whats the move, cap?\n-";
 			draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
-			cin >> ship_dest_x >> ship_dest_y;
-			cout << "Moving to " << ship_dest_x << ":" << ship_dest_y << "... Success!" << endl;
-			system("pause");
+			cin >> ship_dest_y >> ship_dest_x;
+			if (fuel < 4) { cout << "Out of gas, cap! Neen refill!"; }
+			else {
+				if (ship_dest_x >= 0 &&
+					ship_dest_x <= 11 &&
+					ship_dest_y >= 0 &&
+					ship_dest_y <= 11) {
+
+					galaxy[galaxy_x][galaxy_y] = 3; // Visited space "."
+					galaxy[ship_dest_x][ship_dest_y] = 2;
+
+					galaxy_x = ship_dest_x;
+					galaxy_y = ship_dest_y;
+
+					cout << "Moving to " << ship_dest_y << ":0" << ship_dest_x << "...";
+					_sleep(2000);
+					cout << " Success!" << endl;
+					_sleep(1000);
+					fuel -= 4;
+					prompt = "\n\n-We've jumped right in the target, capt'n! Yew!\n-Scanning sector...";
+					draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
+					_sleep(2000);
+					cout << " Success!" << endl;					
+
+				}
+				else {
+					cout << "-Wrong coordinates, nav officer's drunk!\n";
+				}
+			}
+			_sleep(2000);
+			prompt = "\n\n-New heroic orders, capt'n?\n-";
 			break;
 		default:
 			prompt = "\n\n-Your orders, capt'n?\n-";
@@ -470,8 +521,8 @@ int main()
 		if (docking == true) { prompt_mode = 3; }
 		if (quit == true) { break; }
 		draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
-		if (oxygen >= 0.9) { oxygen -= 0.9; } else { oxygen = 0; }
-		if (fuel >= 0.01) { fuel -= 0.01; }	else { fuel = 0; }
+		if (oxygen >= (float)0.9) { oxygen -= (float)0.9; } else { oxygen = 0; }
+		if (fuel >= (float)0.01) { fuel -= (float)0.01; } else { fuel = 0; }
 		if (energy <= 19750) { energy += 250; } else { energy = 20000; }
 	} while (cin >> input);
 

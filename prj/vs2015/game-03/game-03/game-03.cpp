@@ -3,6 +3,7 @@
 // Version 1
 
 // WIP Release1: Global galaxy map.
+	// Generate new sector after each jump.
 // WIP Release2: Global goal. Make all stats (fuel, oxygen, energy) useful.
 // TODO feature: Clingon boarding mode. Ability to capture things and be attacked in return.
 // TODO feature: Remember each sector's stars and other objects.
@@ -14,17 +15,22 @@
 // TODO rewrite: Modularize program (.h, several .cpp).
 
 /*
-00. Win32 
-01. Steam
-02. Flash
-03. Win8 store
-04. Win 10 universal
-05. Win mobile 10
-06. DOS
-07. Linux
-08. Android
-09. iOS
-10. OS X
+. Win32 
+. Linux
+. Android
+
+. DOS
+
+. Win 8.1 store
+. Win 10 universal
+. Win mobile 10
+
+. iOS
+. OS X
+
+. Steam
+. Flash
+
 */
 
 #include "stdafx.h"

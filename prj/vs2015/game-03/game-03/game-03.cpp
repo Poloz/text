@@ -1,5 +1,6 @@
-// game-03.cpp : Defines the entry point for the console application.
-//
+// game-03.cpp : Trekkie game by Alex Baranov.
+// 2016, SPb, Russia.
+// Version 1
 
 // WIP Release1: Global galaxy map.
 // WIP Release2: Global goal. Make all stats (fuel, oxygen, energy) useful.
@@ -7,11 +8,24 @@
 // TODO feature: Remember each sector's stars and other objects.
 // TODO feature: Constellations. Unique star configurations per sector or adjacent sectors.
 // TODO feature: Planets, star names, stardust, asteroids, text quests, prompt personalization and randomization.
-// TODO feature: Flash, win8 store, win 10 universal, win mobile 10, DOS, linux, android, iOS, OS X versions.
 // TODO feature: Localizations.
 // TODO feature: Galaxy jump events (drive falure).
 // TODO feature: Ship's subsystems.
 // TODO rewrite: Modularize program (.h, several .cpp).
+
+/*
+00. Win32 
+01. Steam
+02. Flash
+03. Win8 store
+04. Win 10 universal
+05. Win mobile 10
+06. DOS
+07. Linux
+08. Android
+09. iOS
+10. OS X
+*/
 
 #include "stdafx.h"
 #include <stdlib.h> 
@@ -44,10 +58,9 @@ int ship_y = 0;
 int sector[10][10] = { 0 };
 
 // Global galaxy map
-// 1 - already visited
-// 2 - klingons
-// 4 - base
-// 3 - starship
+// 1 - base
+// 2 - ship
+// 3 - visited
 int galaxy[12][12] = { 0 };
 
 int init_sector(int stars_min, int stars_max, int clingons_min, int clingon_max, bool base) {
@@ -210,13 +223,13 @@ int intro() {
 	cout << "                     Remake\n";
 	cout << "                      v.01\n";
 	cout << "\nFYI some radar readings:\n\n";
-	cout << " * - star. Hot ball of hot gases. Quite hot, fyi.\n";
+	cout << " * - star. Hot ball of hot gases. Quite hot, indeed.\n";
 	cout << " k - slimy klingon. Seven-assed enemy.\n";
 	cout << " S - our ship. She's real beauty, ain't she, capt'n?\n";
 	cout << " B - sector base. Supplies!\n";
 	cout << " w - dangerous warhead.\n";
 	cout << " . - vast black space. No air, just starsine.\n";
-	cout << "\nYou can wander around, launch warhead occasionaly\n";
+	cout << "\nYou could wander around, launch warhead occasionaly\n";
 	cout << "and quit whenever you like. Shiny! Also jumping\n";
 	cout << "between galaxy sectors is not prohibited. Yet.\n";
 	cout << "-----------------------------------------------------\n";
@@ -238,7 +251,6 @@ int endgame(int clingons, bool base_destroyer) {
 	system("pause");
 	return 0;
 }
-
 
 int main()
 {
@@ -277,10 +289,37 @@ int main()
 	bool base_destroyer = false;
 	bool quit = false;
 
-	// Prompts
+	// Prompts !!! This is unedited and cannot be trusted!
 	// 0 - "\n\n-We are short on warheads, need resupply!\n-What should we do?\n-"
 	// 1 - "\n\n-Warhead course?\n-"
 	// 2 - "\n\n-Warhead wanished in the star's flames!\n-Orders?\n-"
+	// 3 - "\n\n-Clingon killed!\n-What should we do now?\n-"
+	// 4 - "\n\n-Base destroyed!\n-What's next? Alderaan?\n-" 
+	// 5 - "\n\n-Lost warhead telemetry!\n-We all doomed!\n-"
+	// 6 - "\n\n-Wrong bearing, sir!\n-Your command, sir?\n-"
+	// 7 - "\n\n-Heading, capt'n?\n-"
+	// 8 - "\n\n-Can't carry the order, sir!\n-Your command, sir?\n-"
+	// 9 - "\n\n-Out of range, sir!\n-Orders?\n-"
+	// 10 - "\n\n-Star ahead!\n-Orders, sir?\n-"
+	// 11 - "\n\n-Clingon ahead!\n-Attacking, sir?\n-"
+	// 12 - "\n\n-Base ahead!\n-We can dock, sir?\n-"
+	// 13 - "\n\n-Something ahead!\n-What will be the orders, sir?\n-"
+	// 14 - "\n\n-Maneuver commenced!\n-Orders, sir?\n-"
+	// 15 - "\n\n-Your orders, capt'n?\n-"
+	// 16 - "\n\n-Got fresh ones!!\n-New orders, sir?\n-"
+	// 17 - "\n\n-Whats the move, cap?\n-"
+	// 18 - "\n\n-New heroic orders, capt'n?\n-"
+	// 19 - "\n\n-Awaiting orders, capt'n?\n-"
+	// 20 - "Out of gas, cap! Neen refill!"
+	// 21 - "\n\n-We've jumped right in the target, capt'n! Yew!\n-Scanning sector..."
+	// 22 - "-Wrong coordinates, nav officer's drunk!\n"
+	// 23 - " Gotcha!"
+	// 24 - " Success!"
+	// 25 - 
+	// 26 - 
+	// 27 - 
+	// 28 -
+	// 29 - 
 	vector<string> prompts;
 
 	int galaxy_x = 11;
@@ -293,9 +332,36 @@ int main()
 
 	intro();
 
-	prompts.push_back("\n\n-We are short on warheads, need resupply!\n-What should we do?\n-");
-	prompts.push_back("\n\n-Warhead course?\n-");
-	prompts.push_back("\n\n-Warhead wanished in the star's flames!\n-Orders?\n-");
+	prompts.push_back("\n\n-We are short on warheads, need resupply!\n-What should we do?\n-"); //0
+	prompts.push_back("\n\n-Warhead course?\n-"); //1
+	prompts.push_back("\n\n-Warhead wanished in the star's flames!\n-Orders?\n-"); //2
+	prompts.push_back("\n\n-Clingon killed!\n-What should we do now?\n-"); //3
+	prompts.push_back("\n\n-Base destroyed!\n-What's next? Alderaan?\n-"); //4
+	prompts.push_back("\n\n-Lost warhead telemetry!\n-More space garbage in the area!\n-"); //5
+	prompts.push_back("\n\n-Wrong bearing, sir!\n-Your command, sir?\n-"); //6
+	prompts.push_back("\n\n-Heading, capt'n?\n-"); //7
+	prompts.push_back("\n\n-Can't carry the order, sir!\n-Your command, sir?\n-"); //8
+	prompts.push_back("\n\n-Out of range, sir!\n-Orders?\n-"); //9
+	prompts.push_back("\n\n-Star ahead!\n-Orders, sir?\n-"); //10
+	prompts.push_back("\n\n-Clingon ahead!\n-Attacking, sir?\n-"); //11
+	prompts.push_back("\n\n-Base ahead!\n-We can dock, sir?\n-"); //12
+	prompts.push_back("\n\n-Something ahead!\n-What will be the orders, sir?\n-"); //13
+	prompts.push_back("\n\n-Maneuver commenced!\n-Orders, sir?\n-"); //14
+	prompts.push_back("\n\n-Your orders, capt'n?\n-"); //15
+	prompts.push_back("\n\n-Got fresh ones!!\n-New orders, sir?\n-"); //16
+	prompts.push_back("\n\n-Whats the move, cap?\n-"); //17
+	prompts.push_back("\n\n-New heroic orders, capt'n?\n-"); //18
+	prompts.push_back("\n\n-Awaiting orders, capt'n?\n-"); //19
+	prompts.push_back("Out of gas, cap! Neen refill!"); //20
+	prompts.push_back("\n\n-We've jumped right in the target, capt'n! Yew!\n-Scanning sector..."); //21
+	prompts.push_back("-Wrong coordinates, nav officer's drunk!\n"); //22
+	prompts.push_back(" Gotcha!"); //23
+	prompts.push_back(" Success!"); //24
+	//prompts.push_back(); //25
+	//prompts.push_back(); //26
+	//prompts.push_back(); //27
+	//prompts.push_back(); //28
+	//prompts.push_back(); //29
 
 	do 
 	{
@@ -361,15 +427,15 @@ int main()
 				prompt = prompts[2];
 				break;
 			case 2:
-				prompt = "\n\n-Clingon killed!\n-What should we do now?\n-";
+				prompt = prompts[3];
 				clingons--;
 				break;
 			case 4:
-				prompt = "\n\n-Base destroyed!\n-What's next?\n-";
+				prompt = prompts[4];
 				base_destroyer = true;
 				break;
 			default:
-				prompt = "\n\n-Lost warhead telemetry!\n-We all doomed!\n-";
+				prompt = prompts[5];
 				break;
 			}
 
@@ -385,12 +451,12 @@ int main()
 				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 				// now that you have reset the stream you can go back and try and read again.
-				prompt = "\n\n-Wrong bearing, sir!\n-Your command, sir?\n-";
+				prompt = prompts[6];
 			}
 
 			break;
 		case 'm': // Move
-			prompt = "\n\n-Heading, capt'n?\n-";
+			prompt = prompts[7];
 			prompt_mode = 1;
 			draw_sector(energy, warheads, fuel, oxygen, sector, prompt, prompt_mode);
 			cin >> input;
@@ -429,28 +495,28 @@ int main()
 				ship_dest_y = ship_y-1;
 				break;
 			default:
-				prompt = "\n\n-Can't carry the order, sir!\n-Your command, sir?\n-";
+				prompt = prompts[8];
 				break;
 			}
 			if ((input >= '1') && (input <= '8')) {
 				if ((ship_dest_x < 0) || (ship_dest_y < 0) || (ship_dest_x > 9) || (ship_dest_y > 9)) {
-					prompt = "\n\n-Out of range, sir!\n-Orders?\n-";					
+					prompt = prompts[9];					
 				}
 				else
 					if (sector[ship_dest_x][ship_dest_y] != 0) {						
 						switch (sector[ship_dest_x][ship_dest_y]) {
 						case 1:
-							prompt = "\n\n-Star ahead!\n-Orders, sir?\n-";
+							prompt = prompts[10];
 							break;
 						case 2:
-							prompt = "\n\n-Clingon ahead!\n-Attacking, sir?\n-";
+							prompt = prompts[11];
 							break;
 						case 4:
-							prompt = "\n\n-Base ahead!\n-We can dock, sir?\n-";
+							prompt = prompts[12];
 							docking = true;
 							break;
 						default:
-							prompt = "\n\n-Something ahead!\n-What will be the orders, sir?\n-";
+							prompt = prompts[13];
 							break;
 						}
 					}
@@ -459,7 +525,7 @@ int main()
 						sector[ship_dest_x][ship_dest_y] = 3;
 						ship_x = ship_dest_x;
 						ship_y = ship_dest_y;
-						prompt = "\n\n-Maneuver commenced!\n-Orders, sir?\n-";
+						prompt = prompts[14];
 						if (fuel >= (float)0.1) { fuel -= (float)0.1; } else { fuel = 0; }
 						if (oxygen >= (float)0.3) { oxygen -= (float)0.3; } else { oxygen = 0; }
 						if (energy >= 100) { energy -= 100; } else { energy = 0; }
@@ -468,21 +534,20 @@ int main()
 			break;
 		case 'd':
 			if (docking == false) { 
-				prompt = "\n\n-Your orders, capt'n?\n-";
+				prompt = prompts[15];
 				break; }
 			warheads = 15;
 			fuel = 100;
 			if (oxygen < 5000) { oxygen = 5000; }
 			if (energy < 8300) { energy = 8300; }
 			docking = false;
-			prompt = "\n\n-Got fresh ones!!\n-New orders, sir?\n-";
+			prompt = prompts[16];
 			break;
-		case 'j':
-			
-			prompt = "\n\n-Whats the move, cap?\n-";
+		case 'j':			
+			prompt = prompts[17];
 			draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
 			cin >> ship_dest_y >> ship_dest_x;
-			if (fuel < 4) { cout << "Out of gas, cap! Neen refill!"; }
+			if (fuel < 4) { cout << prompts[20]; }
 			else {
 				if (ship_dest_x >= 0 &&
 					ship_dest_x <= 11 &&
@@ -497,24 +562,25 @@ int main()
 
 					cout << "Moving to " << ship_dest_y << ":0" << ship_dest_x << "...";
 					_sleep(2000);
-					cout << " Success!" << endl;
+					cout << prompts[23] << endl;
 					_sleep(1000);
 					fuel -= 4;
-					prompt = "\n\n-We've jumped right in the target, capt'n! Yew!\n-Scanning sector...";
+					prompt = prompts[21];
 					draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
 					_sleep(2000);
-					cout << " Success!" << endl;					
+					cout << prompts[24] << endl;					
 
 				}
 				else {
-					cout << "-Wrong coordinates, nav officer's drunk!\n";
+					cout << prompts[22];
 				}
 			}
 			_sleep(2000);
-			prompt = "\n\n-New heroic orders, capt'n?\n-";
+			prompt = prompts[18];
+		//	init_sector((rand() % 1 + 13), (rand() % 20 + 15), 1, 4, true);
 			break;
 		default:
-			prompt = "\n\n-Your orders, capt'n?\n-";
+			prompt = prompts[19];
 			break;
 		}
 		prompt_mode = 0;

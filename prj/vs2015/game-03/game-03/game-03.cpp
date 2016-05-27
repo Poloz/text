@@ -3,7 +3,7 @@
 // Version 1
 
 // WIP Release1: Global galaxy map.
-	// Generate new sector after each jump.
+	// Long range radar radius of 3-4 squares. Detects klingons. Bases are generated at start lokations known.
 // WIP Release2: Global goal. Make all stats (fuel, oxygen, energy) useful.
 // TODO feature: Clingon boarding mode. Ability to capture things and be attacked in return.
 // TODO feature: Remember each sector's stars and other objects.
@@ -75,6 +75,16 @@ int init_sector(int stars_min, int stars_max, int clingons_min, int clingon_max,
 	int k;
 
 	srand(time(NULL));
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 10; j++) {
+			sector[i][j] = 0;
+		}
+	}
+	
+
+	ship_x = 0;
+	ship_y = 0;
 	// stars
 	for (int i = 1; i <= (rand() % (stars_max - stars_min) + stars_min); i++) {
 		do { 
@@ -532,9 +542,9 @@ int main()
 						ship_x = ship_dest_x;
 						ship_y = ship_dest_y;
 						prompt = prompts[14];
-						if (fuel >= (float)0.1) { fuel -= (float)0.1; } else { fuel = 0; }
-						if (oxygen >= (float)0.3) { oxygen -= (float)0.3; } else { oxygen = 0; }
-						if (energy >= 100) { energy -= 100; } else { energy = 0; }
+						if (fuel >= (float)3.1) { fuel -= (float)3.1; } else { fuel = 0; }
+						if (oxygen >= (float)5.3) { oxygen -= (float)5.3; } else { oxygen = 0; }
+						if (energy >= 700) { energy -= 700; } else { energy = 0; }
 					}
 			}
 			break;
@@ -574,7 +584,16 @@ int main()
 					prompt = prompts[21];
 					draw_galaxy(energy, warheads, fuel, oxygen, galaxy, prompt);
 					_sleep(2000);
-					cout << prompts[24] << endl;					
+					cout << prompts[24] << endl;	
+
+					// randomize sector : 5-20 stars, 1-5 clingons, 1 ship, 0-1 base
+					init_sector(5, 20, 1, 5, (((rand() % 2) == 0) ? (true):(false)));
+					if (fuel >= (float)17.1) { fuel -= (float)17.1; }
+					else { fuel = 0; }
+					if (oxygen >= (float)10.3) { oxygen -= (float)10.3; }
+					else { oxygen = 0; }
+					if (energy >= 5700) { energy -= 5700; }
+					else { energy = 0; }
 
 				}
 				else {

@@ -28,13 +28,15 @@
         android:id="@+id/amountTextView"
         android:layout_column="0"
         android:layout_columnSpan="2"
-        android:layout_row="0" />
+        android:layout_row="0"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <TextView
         android:text="Percents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/percentTextView" />
+        android:id="@+id/percentTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <SeekBar
         android:layout_width="wrap_content"
@@ -45,24 +47,28 @@
         android:text="Tip Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tipLabelTextView" />
+        android:id="@+id/tipLabelTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <TextView
         android:text="Tip Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tipTextView" />
+        android:id="@+id/tipTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <TextView
         android:text="Total Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/totalLabelTextView" />
+        android:id="@+id/totalLabelTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <TextView
         android:text="Total Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/totalTextView" />
+        android:id="@+id/totalTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
 </GridLayout>

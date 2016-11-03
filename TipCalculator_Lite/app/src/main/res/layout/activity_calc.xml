@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calc"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.poloz.tutor.tipcalculator_lite.CalcActivity"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    android:layout_width="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/amountEditText"
+        android:layout_column="0"
+        android:layout_columnSpan="2" />
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountTextView"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="0" />
+
+    <TextView
+        android:text="Percents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentTextView" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentSeekBar" />
+
+    <TextView
+        android:text="Tip Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipLabelTextView" />
+
+    <TextView
+        android:text="Tip Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipTextView" />
+
+    <TextView
+        android:text="Total Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalLabelTextView" />
+
+    <TextView
+        android:text="Total Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalTextView" />
+
+</GridLayout>

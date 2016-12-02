@@ -1,9 +1,7 @@
 package com.poloz.noreturn.state;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-
 import java.util.Stack;
-
 
 /**
  * Created by Alex 'Poloz' Baranov on 22.11.2016.
@@ -28,7 +26,7 @@ public class GameStateManager {
         this.states.push(state);
     }
 
-    public  void update(float delta){
+    public void update(float delta){
         this.states.peek().update(delta);
     }
 

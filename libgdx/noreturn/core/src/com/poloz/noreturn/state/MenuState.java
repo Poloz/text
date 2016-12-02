@@ -4,10 +4,9 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.poloz.noreturn.NoReturnGame;
 
 /**
- * Created by A on 02.12.2016.
+ * Created by Alex 'Poloz' Baranov on 02.12.2016.
  */
 
 public class MenuState extends AbstractState {

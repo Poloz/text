@@ -4,7 +4,6 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.poloz.noreturn.state.GameStateManager;
 import com.poloz.noreturn.state.MenuState;
@@ -22,7 +21,7 @@ public class NoReturnGame extends ApplicationAdapter {
 	public void create () {
         gsm = new GameStateManager();
 		batch = new SpriteBatch();
-        bkgMusic = Gdx.audio.newMusic(Gdx.files.internal("Zelentsov_Daleko.mp3"));
+        bkgMusic = Gdx.audio.newMusic(Gdx.files.internal("birds-01.mp3"));
         bkgMusic.setLooping(true);
         bkgMusic.setVolume(0.2f);
         bkgMusic.play();

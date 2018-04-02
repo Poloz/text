@@ -1,0 +1,4 @@
+LIBRARY "2013_02.arx"
+EXPORTS
+    acrxEntryPoint PRIVATE
+    acrxGetApiVersion PRIVATE

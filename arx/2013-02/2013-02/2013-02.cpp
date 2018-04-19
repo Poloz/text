@@ -106,49 +106,51 @@ Acad::ErrorStatus changeColor(AcDbObjectId entId, Adesk::UInt16 newColor)
     return Acad::eOk;
 }
 
+void selectBlocks()
+{
+	ads_name ssname;
+	// Get the current PICKFIRST or ask user for a selection
+	acedSSGet(NULL, NULL, NULL, NULL, ssname); 
+}
+
 void runIt()
 {
-    createNewLayer();
-
-    AcDbObjectIdArray idArr;
-
-    // create a line and circle and add them to the objectId
+	selectBlocks();
+    //createNewLayer();
+	//AcDbObjectIdArray idArr;
+	// create a line and circle and add them to the objectId
     // array
     //
-    idArr.append(createLine());
-    idArr.append(createCircle());
-
-    // change circle color to red
+    //idArr.append(createLine());
+    //idArr.append(createCircle());
+	// change circle color to red
     //
-    changeColor(idArr.last(), 1);
-
-    // put the line and circle in a group named
+    //changeColor(idArr.last(), 1);
+	// put the line and circle in a group named
     // "ASDK_TEST_GROUP"
     //
-    createGroup(idArr, ACRX_T("ASDK_TEST_GROUP"));
+    //createGroup(idArr, ACRX_T("ASDK_TEST_GROUP"));
 }
 
 void initApp()
 {
-    acedRegCmds->addCommand(ACRX_T("ASDK_MAKE_ENTS"),
-                            ACRX_T("ASDK_MKENTS"),
-                            ACRX_T("MKENTS"),
+    acedRegCmds->addCommand(ACRX_T("KZFT_CREATE_SPEC"),
+                            ACRX_T("KZFT_CSPEC"),
+                            ACRX_T("CSPEC"),
                             ACRX_CMD_MODAL,
                             runIt);
 }
 
 void unloadApp()
 {
-        acedRegCmds->removeGroup(ACRX_T("ASDK_MAKE_ENTS"));
+	acedRegCmds->removeGroup(ACRX_T("ASDK_MAKE_ENTS"));
 }
 
 // Simple acrxEntryPoint code. Normally intialization and cleanup
 // (such as registering and removing commands) should be done here.
 //
 
-extern "C" AcRx::AppRetCode
-
-acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
+extern "C" AcRx::AppRetCode acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
 {
     switch(msg) {
     case AcRx::kInitAppMsg:
@@ -166,12 +168,6 @@ acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
         acrxRegisterAppMDIAware(appId);
         acutPrintf(ACRX_T("\nExample Application Loaded"));
 		initApp();
-		/**
-		acutPrintf(ACRX_T("\nHere's the line"));
-		createLine();
-		acutPrintf(ACRX_T("\nHere's the circle"));
-		createCircle();
-		**/
     break;
     case AcRx::kUnloadAppMsg:
 		unloadApp();

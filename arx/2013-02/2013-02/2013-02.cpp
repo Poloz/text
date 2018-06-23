@@ -8,52 +8,67 @@
 #include "dbsymtb.h"
 #include "dbapserv.h"
 #include "dbents.h"
+#include <dbgroup.h>
+#include <dbapserv.h>
+#include <dbsymtb.h>
+#include <aced.h>
+#include "adscodes.h" //RTNORM
+#include "acedads.h"
 
-AcDbObjectId createLine()
+
+void selectBlocks()
 {
-    AcGePoint3d startPt(4.0, 2.0, 0.0);
-    AcGePoint3d endPt(10.0, 7.0, 0.0);
-    AcDbLine *pLine = new AcDbLine(startPt, endPt);
-    AcDbBlockTable *pBlockTable;
-    acdbHostApplicationServices()->workingDatabase()
-        ->getSymbolTable(pBlockTable, AcDb::kForRead);
-    AcDbBlockTableRecord *pBlockTableRecord;
-    pBlockTable->getAt(ACDB_MODEL_SPACE, pBlockTableRecord,
-        AcDb::kForWrite);
-    pBlockTable->close();
-    AcDbObjectId lineId;
-    pBlockTableRecord->appendAcDbEntity(lineId, pLine);
-    pBlockTableRecord->close();
-    pLine->close();
-    return lineId;
+	ads_name ssname;
+	struct resbuf filter;
+	ACHAR sbuf[15] = ACRX_T("Arm_zone_v001");
+	filter.restype = 0;	// Entity name
+	filter.resval.rstring = sbuf;
+	filter.rbnext = NULL; // No other properties
+	// Get the current PICKFIRST or ask user for a selection
+	acutPrintf(ACRX_T("\nPlease select Arm_zone_v001 blocks."));
+	acedSSGet(NULL, NULL, NULL, NULL, ssname);
+	//acedSSGet(ACRX_T("X"), NULL, NULL, &filter, ssname); //
+	long length = 0;
+	if (acedSSLength(ssname, &length) != RTNORM)
+	{
+		acutPrintf(ACRX_T("\nLeaving..."));
+		acedSSFree(ssname);
+		return;
+	}
+	ads_name ent;
+	long counter = 0;
+	AcDbObjectId obId = AcDbObjectId::kNull;
+	for (long i = 0; i < length; i++)
+	{
+		if (acedSSName(ssname, i, ent) != RTNORM) continue;
+		if (acdbGetObjectId(obId, ent) != Acad::eOk) continue;
+		AcDbEntity* pEnt = NULL;
+		if (acdbOpenAcDbEntity(pEnt, obId, AcDb::kForWrite) != Acad::eOk) continue;
+		counter++;
+	}
+	acutPrintf(ACRX_T("The counter is:%n.", counter));
 }
 
-AcDbObjectId createCircle()
+void runIt()
 {
-    AcGePoint3d center(9.0, 3.0, 0.0);
-    AcGeVector3d normal(0.0, 0.0, 1.0);
-    AcDbCircle *pCirc = new AcDbCircle(center, normal, 2.0);
-    AcDbBlockTable *pBlockTable;
-    acdbHostApplicationServices()->workingDatabase()
-        ->getSymbolTable(pBlockTable, AcDb::kForRead);
-    AcDbBlockTableRecord *pBlockTableRecord;
-    pBlockTable->getAt(ACDB_MODEL_SPACE, pBlockTableRecord,
-        AcDb::kForWrite);
-    pBlockTable->close();
-    AcDbObjectId circleId;
-    pBlockTableRecord->appendAcDbEntity(circleId, pCirc);
-    pBlockTableRecord->close();
-    pCirc->close();
-    return circleId;
+	selectBlocks();
 }
 
-// Simple acrxEntryPoint code. Normally intialization and cleanup
-// (such as registering and removing commands) should be done here.
-//
+void initApp()
+{
+    acedRegCmds->addCommand(ACRX_T("KZFT_CREATE_SPEC"),
+                            ACRX_T("KZFT_CSPEC"),
+                            ACRX_T("CSPEC"),
+                            ACRX_CMD_MODAL,
+                            runIt);
+}
 
-extern "C" AcRx::AppRetCode
+void unloadApp()
+{
+	acedRegCmds->removeGroup(ACRX_T("ASDK_MAKE_ENTS"));
+}
 
-acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
+extern "C" AcRx::AppRetCode acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
 {
     switch(msg) {
     case AcRx::kInitAppMsg:
@@ -70,13 +85,11 @@ acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
         //
         acrxRegisterAppMDIAware(appId);
         acutPrintf(ACRX_T("\nExample Application Loaded"));
-		acutPrintf(ACRX_T("\nHere's the line"));
-		createLine();
-		acutPrintf(ACRX_T("\nHere's the circle"));
-		createCircle();
+		initApp();
     break;
     case AcRx::kUnloadAppMsg:
-        acutPrintf(ACRX_T("\nExample Application Unloaded"));
+		unloadApp();
+        //acutPrintf(ACRX_T("\nExample Application Unloaded"));
     break;
     }
     return AcRx::kRetOK;

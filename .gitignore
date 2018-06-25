@@ -17,3 +17,15 @@
 /arx/2013-02/Debug
 /arx/2013-02/Release
 *.sdf
+*.opensdf
+*.lastbuildstate
+*.arx
+*.exp
+*.lib
+*.cache
+*.manifest
+/godot
+/prj
+/txt
+*.rc
+*.res

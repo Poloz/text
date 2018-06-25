@@ -15,19 +15,29 @@
 #include "adscodes.h" //RTNORM
 #include "acedads.h"
 
-
 void selectBlocks()
 {
 	ads_name ssname;
-	struct resbuf filter;
-	ACHAR sbuf[15] = ACRX_T("Arm_zone_v001");
-	filter.restype = 0;	// Entity name
-	filter.resval.rstring = sbuf;
-	filter.rbnext = NULL; // No other properties
+	struct resbuf blockFilter, insertFilter;
+
+	//ACHAR insertName[15] = ACRX_T("Arm_zone_v001");
+	ACHAR insertName[15] = ACRX_T("TestBlock01");
+	ACHAR entityname[15] = ACRX_T("INSERT");
+	
+	insertFilter.restype = 0;	// Entity name
+	insertFilter.resval.rstring = insertName;
+	insertFilter.rbnext = NULL; // No other properties
+
+	blockFilter.restype = 0;
+	blockFilter.resval.rstring = insertName;
+	blockFilter.rbnext = &insertFilter;
+	
 	// Get the current PICKFIRST or ask user for a selection
-	acutPrintf(ACRX_T("\nPlease select Arm_zone_v001 blocks."));
-	acedSSGet(NULL, NULL, NULL, NULL, ssname);
-	//acedSSGet(ACRX_T("X"), NULL, NULL, &filter, ssname); //
+	acutPrintf(ACRX_T("\nPlease select %s blocks."), insertName);
+	//acedSSGet(NULL, NULL, NULL, NULL, ssname);
+	
+	acedSSGet(ACRX_T("X"), NULL, NULL, &blockFilter, ssname); //
+	
 	long length = 0;
 	if (acedSSLength(ssname, &length) != RTNORM)
 	{
@@ -35,6 +45,7 @@ void selectBlocks()
 		acedSSFree(ssname);
 		return;
 	}
+	/**
 	ads_name ent;
 	long counter = 0;
 	AcDbObjectId obId = AcDbObjectId::kNull;
@@ -47,6 +58,9 @@ void selectBlocks()
 		counter++;
 	}
 	acutPrintf(ACRX_T("The counter is:%n.", counter));
+	**/
+	acutPrintf(ACRX_T("\nLooks OK..."));
+	acedSSFree(ssname);
 }
 
 void runIt()
@@ -65,7 +79,7 @@ void initApp()
 
 void unloadApp()
 {
-	acedRegCmds->removeGroup(ACRX_T("ASDK_MAKE_ENTS"));
+	acedRegCmds->removeGroup(ACRX_T("KZFT_CREATE_SPEC"));
 }
 
 extern "C" AcRx::AppRetCode acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
@@ -73,23 +87,13 @@ extern "C" AcRx::AppRetCode acrxEntryPoint(AcRx::AppMsgCode msg, void* appId)
     switch(msg) {
     case AcRx::kInitAppMsg:
         // Allow application to be unloaded
-        // Without this statement, AutoCAD will
-        // not allow the application to be unloaded
-        // except on AutoCAD exit.
-        //
         acrxUnlockApplication(appId);
         // Register application as MDI aware. 
-        // Without this statement, AutoCAD will
-        // switch to SDI mode when loading the
-        // application.
-        //
         acrxRegisterAppMDIAware(appId);
-        acutPrintf(ACRX_T("\nExample Application Loaded"));
 		initApp();
     break;
     case AcRx::kUnloadAppMsg:
 		unloadApp();
-        //acutPrintf(ACRX_T("\nExample Application Unloaded"));
     break;
     }
     return AcRx::kRetOK;

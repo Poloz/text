@@ -20,32 +20,36 @@ void selectBlocks()
 	ads_name ssname;
 	struct resbuf blockFilter, insertFilter;
 
-	//ACHAR insertName[15] = ACRX_T("Arm_zone_v001");
-	ACHAR insertName[15] = ACRX_T("TestBlock01");
-	ACHAR entityname[15] = ACRX_T("INSERT");
+	ACHAR insertName[15] = ACRX_T("Arm_zone_v001");
+	//ACHAR insertName[15] = ACRX_T("TestBlock01");
 	
-	insertFilter.restype = 0;	// Entity name
+	insertFilter.restype = 2;	// Entity name
 	insertFilter.resval.rstring = insertName;
 	insertFilter.rbnext = NULL; // No other properties
 
-	blockFilter.restype = 0;
-	blockFilter.resval.rstring = insertName;
+	blockFilter.restype = 0; // Entity type
+	blockFilter.resval.rstring = ACRX_T("INSERT");
 	blockFilter.rbnext = &insertFilter;
-	
-	// Get the current PICKFIRST or ask user for a selection
+
 	acutPrintf(ACRX_T("\nPlease select %s blocks."), insertName);
-	//acedSSGet(NULL, NULL, NULL, NULL, ssname);
 	
-	acedSSGet(ACRX_T("X"), NULL, NULL, &blockFilter, ssname); //
-	
-	long length = 0;
-	if (acedSSLength(ssname, &length) != RTNORM)
+	if (acedSSGet(NULL, NULL, NULL, &blockFilter, ssname) != RTNORM )
 	{
-		acutPrintf(ACRX_T("\nLeaving..."));
+		acutPrintf(ACRX_T("\nSomething's wrong.\n"));
 		acedSSFree(ssname);
 		return;
 	}
-	/**
+	
+	long length = 0;
+	
+	if (acedSSLength(ssname, &length) != RTNORM)
+	{
+		acutPrintf(ACRX_T("\nNo blocks selectes\n"));
+		acedSSFree(ssname);
+		return;
+	}
+	
+	//-----------
 	ads_name ent;
 	long counter = 0;
 	AcDbObjectId obId = AcDbObjectId::kNull;
@@ -53,13 +57,12 @@ void selectBlocks()
 	{
 		if (acedSSName(ssname, i, ent) != RTNORM) continue;
 		if (acdbGetObjectId(obId, ent) != Acad::eOk) continue;
-		AcDbEntity* pEnt = NULL;
-		if (acdbOpenAcDbEntity(pEnt, obId, AcDb::kForWrite) != Acad::eOk) continue;
+		//AcDbEntity* pEnt = NULL;
+		//if (acdbOpenAcDbEntity(pEnt, obId, AcDb::kForWrite) != Acad::eOk) continue;
 		counter++;
 	}
-	acutPrintf(ACRX_T("The counter is:%n.", counter));
-	**/
-	acutPrintf(ACRX_T("\nLooks OK..."));
+	acutPrintf(ACRX_T("\nThe counter is %d."), counter);
+	//---------
 	acedSSFree(ssname);
 }
 

@@ -16,10 +16,10 @@
 #include "acedads.h"
 #include "dbobjptr.h"
 #include "dbdynblk.h"
-#include <atlstr.h> 
+#include <atlstr.h>
 
 void selectBlocks()
-{
+{ 
 	ads_name ssname;
 	struct resbuf blockFilter;//, insertFilter;
 
@@ -77,23 +77,10 @@ void selectBlocks()
 					pBlkRef->close(); 
 					continue;
 				}
-				AcDbDynBlockReferencePropertyArray blkPropAry;
-				dynBlk.getBlockProperties(blkPropAry);
-				//Acad::ErrorStatus err;
-				AcDbDynBlockReferenceProperty blkProp;
-				for(long lIndex=0L ; lIndex<blkPropAry.length() ; ++lIndex){
-					blkProp = blkPropAry[lIndex];
-					if (wcscmp(blkProp.propertyName().kACharPtr(), L"ÄËÈÍÀ") == 0){
-						//acutPrintf(ACRX_T("\n%s : "),blkProp.propertyName());
-					    AcDbEvalVariant currentValue = blkProp.value();
-					    //acutPrintf(ACRX_T("\n Restype %d"),currentValue.restype);
-					    acutPrintf(ACRX_T("\n%.0f"),currentValue.resval.rreal);
-					}
-				}
 				//http://arxdummies.blogspot.com/2005/03/class-6-entities.html
 				// First we will look into BlockReference entity looking for
 				// all non-constant attributes which are stored into block insertions
-				AcDbObjectIterator *pIter = pBlkRef->attributeIterator() ;
+				AcDbObjectIterator *pIter = pBlkRef->attributeIterator();
 				while ( !pIter->done () ) {
 					AcDbEntity *pAttEnt = NULL;
 					AcDbObjectId idAtt = pIter->objectId();
@@ -110,6 +97,10 @@ void selectBlocks()
 							}
 							if (wcscmp(pAtt->tag(), L"ÏÎÇ") == 0) {
 								//acutPrintf(ACRX_T("\nTAG:%s - VALUE:%s"),pAtt->tag(),pAtt->textString());
+								acutPrintf(ACRX_T("\n%s:%s"),pAtt->tag(),pAtt->textString());
+							}
+							if (wcscmp(pAtt->tag(), L"ÊÎË") == 0) {
+								//acutPrintf(ACRX_T("\nTAG:%s - VALUE:%s"),pAtt->tag(),pAtt->textString());
 								acutPrintf(ACRX_T(" %s:%s"),pAtt->tag(),pAtt->textString());
 							}
 						}
@@ -117,13 +108,27 @@ void selectBlocks()
 					}
 					pIter->step();
 				}
-				delete pIter ;	
+				delete pIter ;
+				
+				AcDbDynBlockReferencePropertyArray blkPropAry;
+				dynBlk.getBlockProperties(blkPropAry);
+				//Acad::ErrorStatus err;
+				AcDbDynBlockReferenceProperty blkProp;
+				for(long lIndex=0L ; lIndex<blkPropAry.length() ; ++lIndex){
+					blkProp = blkPropAry[lIndex];
+					if (wcscmp(blkProp.propertyName().kACharPtr(), L"ÄËÈÍÀ") == 0){
+						//acutPrintf(ACRX_T("\n%s : "),blkProp.propertyName());
+					    AcDbEvalVariant currentValue = blkProp.value();
+					    //acutPrintf(ACRX_T("\n Restype %d"),currentValue.restype);
+					    acutPrintf(ACRX_T(" %.0f"),currentValue.resval.rreal);
+					}
+				}
 				pBTR->close();
 			}
 		counter++;
 		pBlkRef->close();
 	}
-	acutPrintf(ACRX_T("\nThe counter is %d."), counter);
+	acutPrintf(ACRX_T("\nThe counter is %d.\n"), counter);
 	acedSSFree(ssname);
 }
 
